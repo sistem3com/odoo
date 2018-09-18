@@ -23,42 +23,42 @@ msgstr ""
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_1
 msgid "0-15"
-msgstr "0-15"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_2
 msgid "16-20"
-msgstr "16-20"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_3
 msgid "21-30"
-msgstr "21-30"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_4
 msgid "31-40"
-msgstr "31-40"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_5
 msgid "41-50"
-msgstr "41-50"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_6
 msgid "51-60"
-msgstr "51-60"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_7
 msgid "61-70"
-msgstr "61-70"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_8
 msgid "71+"
-msgstr "71+"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
@@ -66,8 +66,6 @@ msgid ""
 "<span class=\"o_stat_text\">Print</span>\n"
 "                        <span class=\"o_stat_text\">Interview</span>"
 msgstr ""
-"<span class=\"o_stat_text\">In</span>\n"
-"                      <span class=\"o_stat_text\">Phỏng vấn</span>"
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
@@ -75,8 +73,6 @@ msgid ""
 "<span class=\"o_stat_text\">Start</span>\n"
 "                        <span class=\"o_stat_text\">Interview</span>"
 msgstr ""
-"<span class=\"o_stat_text\">Bắt đầu</span>\n"
-"                       <span class=\"o_stat_text\">Phỏng vấn</span>"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_2_4
@@ -86,7 +82,7 @@ msgstr "Các hoạt động"
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
 msgid "Answer related job question"
-msgstr "Trả lời câu hỏi về công việc liên quan"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.model,name:hr_recruitment_survey.model_hr_applicant
@@ -96,7 +92,7 @@ msgstr "Ứng viên"
 #. module: hr_recruitment_survey
 #: model:survey.page,title:hr_recruitment_survey.recruitment_1
 msgid "Basic information"
-msgstr "Thông tin cơ bản"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.model.fields,help:hr_recruitment_survey.field_hr_applicant_survey_id
@@ -105,39 +101,37 @@ msgid ""
 "Choose an interview form for this job position and you will be able to "
 "print/answer this interview from all applicants who apply for this job"
 msgstr ""
-"Chọn một mẫu phỏng vấn cho vị trí công việc này và bạn sẽ có thể in / trả "
-"lời phỏng vấn này từ tất cả các ứng viên đăng ký làm việc này"
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_4
 msgid "Desk space"
-msgstr "Không gian bàn làm việc"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.hr_job_survey_inherit
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "Display Interview Form"
-msgstr "Hiển thị mẫu phỏng vẫn"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_11
 msgid "Dress code"
-msgstr "Dress code"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_2_2
 msgid "Education"
-msgstr "Trình độ"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.page,title:hr_recruitment_survey.recruitment_2
 msgid "Education and Activities"
-msgstr "Giáo dục và hoạt động"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_2_3
 msgid "Experience"
-msgstr "Kinh nghiệm"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_2_2
@@ -147,32 +141,32 @@ msgstr "Nữ"
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_8
 msgid "Freebies such as tea, coffee and stationery"
-msgstr "Quà tặng miễn phí như trà, cà phê và văn phòng phẩm"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_1_1
 msgid "From which university will you graduate?"
-msgstr "Bạn đã tốt nghiệp đại học nào?"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_2
 msgid "Getting on with colleagues"
-msgstr "Bắt đầu với các đồng nghiệp"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_7
 msgid "Good management"
-msgstr "Ban Quản lí tốt"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_1
 msgid "Good pay"
-msgstr "Lương tốt"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_13
 msgid "Good social life"
-msgstr "Đời sống xã hội tốt"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,comments_message:hr_recruitment_survey.recruitment_1_1
@@ -189,18 +183,18 @@ msgstr "Nếu khác, xin vui lòng ghi rõ:"
 #. module: hr_recruitment_survey
 #: model:survey.page,title:hr_recruitment_survey.recruitment_3
 msgid "Importance"
-msgstr "Tầm quan trọng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_3
 msgid "Important"
-msgstr "Quan trọng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_job_survey_id
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "Interview Form"
-msgstr "Mẫu phỏng vấn"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.model,name:hr_recruitment_survey.model_hr_job
@@ -220,57 +214,57 @@ msgstr "Nam"
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_5
 msgid "Most important"
-msgstr "Quan trọng nhất"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "No Interview Form"
-msgstr "Không có mẫu phỏng vấn"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_10
 msgid "No out of hours working"
-msgstr "Không có giờ làm việc"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_1
 msgid "Not important"
-msgstr "Không quan trọng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_3
 msgid "Office environment"
-msgstr "Môi trường văn phòng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_6
 msgid "Office location"
-msgstr "Địa điểm văn phòng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_9
 msgid "Perks such as free parking, gym passes"
-msgstr "Các đặc quyền như chỗ đỗ xe miễn phí, vé vào phòng tập thể dục"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
 msgid "Print interview report"
-msgstr "In báo cáo phỏng vấn"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_3_1
 msgid "Rate the Importance"
-msgstr "Đánh giá tầm quan trọng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.survey,title:hr_recruitment_survey.recruitment_form
 msgid "Recruitment Form"
-msgstr "Mẫu tuyển dụng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_12
 msgid "Regular meetings"
-msgstr "Buổi họp thường xuyên"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant_response_id
@@ -280,12 +274,12 @@ msgstr "Hồi đáp"
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_2
 msgid "Somewhat important"
-msgstr "Hơi quan trọng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_5
 msgid "State of the art technology"
-msgstr "Công nghệ kỹ thuật"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant_survey_id
@@ -309,8 +303,6 @@ msgstr "Câu trả lợi bạn nhập có định dạng không hợp lệ."
 msgid ""
 "This form is intended to help the responsible of a recruitment interview."
 msgstr ""
-"Biểu mẫu này nhằm mục đích giúp chịu trách nhiệm về cuộc phỏng vấn tuyển "
-"dụng."
 
 #. module: hr_recruitment_survey
 #: model:survey.question,constr_error_msg:hr_recruitment_survey.recruitment_1_1
@@ -327,14 +319,14 @@ msgstr "Câu trả lời là bắt buộc."
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_4
 msgid "Very important"
-msgstr "Rất quan trọng"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_1_3
 msgid "What age group do you belong to?"
-msgstr "Bạn thuộc nhóm tuổi nào?"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_1_2
 msgid "What is your gender?"
-msgstr "Giới tính của bạn là gì?"
+msgstr ""

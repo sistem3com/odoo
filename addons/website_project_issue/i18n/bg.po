@@ -8,13 +8,14 @@
 # Martin Trigaux, 2016
 # Maria Boyadjieva <marabo2000@gmail.com>, 2016
 # Iliana Ilieva <i.ilieva@sunservice-bg.com>, 2016
+# Vladimir Dachev <v.dachev@dalkomotors.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-07 08:57+0000\n"
 "PO-Revision-Date: 2016-09-07 08:57+0000\n"
-"Last-Translator: Iliana Ilieva <i.ilieva@sunservice-bg.com>, 2016\n"
+"Last-Translator: Vladimir Dachev <v.dachev@dalkomotors.com>, 2016\n"
 "Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +41,7 @@ msgstr "<strong>Описание</strong>"
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues_issue
 msgid "<strong>Message and communication history</strong>"
-msgstr "<strong>История на съобщенията и комуникациите</strong>"
+msgstr "<strong>Съобщения и комуникационна история</strong>"
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues_issue
@@ -56,12 +57,12 @@ msgstr "Всички"
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues
 msgid "Current stage of the issue"
-msgstr "Настоящ етап на грешката"
+msgstr ""
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues_issue
 msgid "Current stage of this issue"
-msgstr "Настоящ етап на тази грешка"
+msgstr "Текущо състояние на билета"
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues
@@ -71,29 +72,29 @@ msgstr "Описание"
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues_issue
 msgid "Edit Issue"
-msgstr "Редактирайте грешка"
+msgstr ""
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues_issue
 msgid "Issue"
-msgstr "Грешка"
+msgstr "Билет"
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.portal_layout
 msgid "Issues"
-msgstr "Грешки"
+msgstr ""
 
 #. module: website_project_issue
 #: code:addons/website_project_issue/controllers/main.py:30
 #, python-format
 msgid "Last Stage Update"
-msgstr "Последно обновяване на етап"
+msgstr "Последно обновяване на етапа"
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues_issue
 msgid "My Issues"
-msgstr "Моите грешки"
+msgstr ""
 
 #. module: website_project_issue
 #: code:addons/website_project_issue/controllers/main.py:28
@@ -105,17 +106,17 @@ msgstr "Име"
 #: code:addons/website_project_issue/controllers/main.py:27
 #, python-format
 msgid "Newest"
-msgstr "Най-новите"
+msgstr ""
 
 #. module: website_project_issue
 #: model:ir.model,name:website_project_issue.model_project_issue
 msgid "Project Issue"
-msgstr "Проектна грешка"
+msgstr "Проектен билет"
 
 #. module: website_project_issue
 #: model:ir.ui.view,arch_db:website_project_issue.my_issues
 msgid "Projects:"
-msgstr "Проекти:"
+msgstr ""
 
 #. module: website_project_issue
 #: code:addons/website_project_issue/controllers/main.py:29

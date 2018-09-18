@@ -21,4 +21,3 @@ Peter Hahn peter.hahn@initos.com https://github.com/codingforfun
 Claudia Haida claudia.haida@initos.com
 Andreas Zöllner andreas.zoellner@initos.com https://github.com/azoellner
 Rami Alwafaie rami.alwafaie@initos.com https://github.com/rami-wafaie
-Florian Kantelberg florian.kantelberg@initos.com https://github.com/fkantelberg

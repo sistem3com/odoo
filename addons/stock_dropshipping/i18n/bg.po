@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2016
+# Albena Mincheva <albena_vicheva@abv.bg>, 2018
 # Maria Boyadjieva <marabo2000@gmail.com>, 2018
 msgid ""
 msgstr ""
@@ -27,7 +28,7 @@ msgstr "Пуснете шипинг "
 #. module: stock_dropshipping
 #: model:stock.picking.type,name:stock_dropshipping.picking_type_dropship
 msgid "Dropship"
-msgstr "Дропшип"
+msgstr ""
 
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_account_invoice
@@ -37,4 +38,4 @@ msgstr "Фактура"
 #. module: stock_dropshipping
 #: model:procurement.rule,name:stock_dropshipping.procurement_rule_drop_shipping
 msgid "Vendor → Customer"
-msgstr "Доставчик → клиент"
+msgstr "Доставчик → Клиент"

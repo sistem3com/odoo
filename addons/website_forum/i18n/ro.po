@@ -420,7 +420,7 @@ msgstr "Activitate"
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.post_answer
 msgid "Add a Comment"
-msgstr "Adaugă un comentariu"
+msgstr ""
 
 #. module: website_forum
 #. openerp-web

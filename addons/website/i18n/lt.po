@@ -455,7 +455,7 @@ msgstr ""
 #. module: website
 #: model:ir.ui.view,arch_db:website.user_navbar
 msgid "<span class=\"fa fa-plus\"/>New"
-msgstr "<span class=\"fa fa-plus\"/>Naujas"
+msgstr ""
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.website_planner

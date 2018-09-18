@@ -3,10 +3,10 @@
 # * mrp_byproduct
 # 
 # Translators:
-# Maria Boyadjieva <marabo2000@gmail.com>, 2016
-# Kaloyan Naumov <kaloyan@lumnus.net>, 2016
-# Martin Trigaux, 2016
 # kalatchev, 2016
+# Martin Trigaux, 2016
+# Kaloyan Naumov <kaloyan@lumnus.net>, 2016
+# Anton Vassilev, 2016
 # Albena Mincheva <albena_vicheva@abv.bg>, 2018
 # Boris Stefanov <borkata@gmail.com>, 2018
 msgid ""
@@ -26,17 +26,17 @@ msgstr ""
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_bom
 msgid "Bill of Material"
-msgstr "Фактура за покупка на материали"
+msgstr "Списък с материали"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_bom_id
 msgid "BoM"
-msgstr "Фактура за покупка на материали"
+msgstr "Списъка от материали"
 
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_subproduct
 msgid "Byproduct"
-msgstr "Вторичен продукт"
+msgstr "вторичен продукт"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_bom_sub_products
@@ -47,7 +47,7 @@ msgstr "Вторични продукти"
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_change_production_qty
 msgid "Change Quantity of Products"
-msgstr "Променете количеството продукти"
+msgstr "Промяна на кол. на продукта"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_create_uid
@@ -62,32 +62,32 @@ msgstr "Създадено на"
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_display_name
 msgid "Display Name"
-msgstr "Покажете име"
+msgstr "Име за показване"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_id
 msgid "ID"
-msgstr "ИН"
+msgstr "ID"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct___last_update
 msgid "Last Modified on"
-msgstr "Последно коригирано на"
+msgstr "Последно променено на"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_write_uid
 msgid "Last Updated by"
-msgstr "Последно актуализирано от"
+msgstr "Последно обновено от"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_write_date
 msgid "Last Updated on"
-msgstr "Последно актуализирано на"
+msgstr "Последно обновено на"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_operation_id
 msgid "Produced at Operation"
-msgstr "Произведено при операция"
+msgstr "Произведени при операция"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_product_id
@@ -97,7 +97,7 @@ msgstr "Продукт"
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_product_qty
 msgid "Product Qty"
-msgstr "Количество продукт"
+msgstr "К-во продукт"
 
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_production
@@ -107,7 +107,7 @@ msgstr "Производство"
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_stock_move
 msgid "Stock Move"
-msgstr "Движение в склада"
+msgstr "Движение на наличности"
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_stock_move_subproduct_id
@@ -117,7 +117,8 @@ msgstr "Субпродукти"
 #. module: mrp_byproduct
 #: model:ir.model.fields,help:mrp_byproduct.field_stock_move_subproduct_id
 msgid "Subproduct line that generated the move in a manufacturing order"
-msgstr "Ред на субпродукта, който създава движението в производствена поръчка"
+msgstr ""
+"Линия на субпродукта, която генерира движението в производствена поръчка"
 
 #. module: mrp_byproduct
 #: code:addons/mrp_byproduct/models/mrp_subproduct.py:32
@@ -126,8 +127,8 @@ msgid ""
 "The Product Unit of Measure you chose has a different category than in the "
 "product form."
 msgstr ""
-"Избраната от Вас мерна единица има различна категория от тази в продуктовата"
-" форма."
+"Мерната Единица, която сте избрали е в различна категория, от тази на "
+"продуктът."
 
 #. module: mrp_byproduct
 #: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_product_uom_id

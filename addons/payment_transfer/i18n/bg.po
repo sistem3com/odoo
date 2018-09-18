@@ -3,6 +3,7 @@
 # * payment_transfer
 # 
 # Translators:
+# Bernard <bernard@abv.bg>, 2016
 # Maria Boyadjieva <marabo2000@gmail.com>, 2016
 # Martin Trigaux, 2016
 msgid ""
@@ -66,12 +67,12 @@ msgstr "Банкови сметки"
 #. module: payment_transfer
 #: model:ir.model,name:payment_transfer.model_payment_acquirer
 msgid "Payment Acquirer"
-msgstr "Обработчик на плащане"
+msgstr "Обработчик на плащането"
 
 #. module: payment_transfer
 #: model:ir.model,name:payment_transfer.model_payment_transaction
 msgid "Payment Transaction"
-msgstr "Платежна транзакция"
+msgstr "Плащане"
 
 #. module: payment_transfer
 #: code:addons/payment_transfer/models/payment.py:59

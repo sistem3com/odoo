@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2016
-# Maria Boyadjieva <marabo2000@gmail.com>, 2016
+# kalatchev, 2016
 # Albena Mincheva <albena_vicheva@abv.bg>, 2018
 msgid ""
 msgstr ""
@@ -23,7 +23,7 @@ msgstr ""
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_1
 msgid "0-15"
-msgstr "0-15"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_3_2
@@ -66,8 +66,8 @@ msgid ""
 "<span class=\"o_stat_text\">Print</span>\n"
 "                        <span class=\"o_stat_text\">Interview</span>"
 msgstr ""
-"<span class=\"o_stat_text\">Принтирайте</span>\n"
-"<span class=\"o_stat_text\">интервю</span>"
+"<span class=\"o_stat_text\">Принтирай</span>\n"
+"<span class=\"o_stat_text\">Интервю</span>"
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
@@ -75,18 +75,18 @@ msgid ""
 "<span class=\"o_stat_text\">Start</span>\n"
 "                        <span class=\"o_stat_text\">Interview</span>"
 msgstr ""
-"<span class=\"o_stat_text\">Започнете</span>\n"
-"<span class=\"o_stat_text\">интервю</span>"
+"<span class=\"o_stat_text\">Старт</span>\n"
+"<span class=\"o_stat_text\">Интервю</span>"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_2_4
 msgid "Activities"
-msgstr "Дейности"
+msgstr "Действия"
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
 msgid "Answer related job question"
-msgstr "Отговор, свързан с въпрос по работа"
+msgstr "Въпрос, свързан с работата по отговор"
 
 #. module: hr_recruitment_survey
 #: model:ir.model,name:hr_recruitment_survey.model_hr_applicant
@@ -105,24 +105,22 @@ msgid ""
 "Choose an interview form for this job position and you will be able to "
 "print/answer this interview from all applicants who apply for this job"
 msgstr ""
-"Изберете форма за интервю за тази работна позиция и ще можете да  "
-"разпечатате/отговорите на всички кандидати, кандидатстващи за тази длъжност"
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_4
 msgid "Desk space"
-msgstr "Пространство в десктоп"
+msgstr "Офис пространство"
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.hr_job_survey_inherit
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "Display Interview Form"
-msgstr "Покажете формата за интервю "
+msgstr "Покажи формата за интервю "
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_11
 msgid "Dress code"
-msgstr "Дрескод"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_2_2
@@ -147,17 +145,17 @@ msgstr "Жена"
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_8
 msgid "Freebies such as tea, coffee and stationery"
-msgstr "Безплатни чай, кафе и канцеларски материали"
+msgstr "Чай, кафе и канцеларски материали"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_1_1
 msgid "From which university will you graduate?"
-msgstr "Кой университет ще завършите?"
+msgstr "Кой университет ще завършиш?"
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_2
 msgid "Getting on with colleagues"
-msgstr "Спогаждане с колеги"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_7
@@ -184,7 +182,7 @@ msgstr "Добър социален живот"
 #: model:survey.question,comments_message:hr_recruitment_survey.recruitment_2_4
 #: model:survey.question,comments_message:hr_recruitment_survey.recruitment_3_1
 msgid "If other, please specify:"
-msgstr "Ако е друго, моля уточнете:"
+msgstr "Ако Друго, моля уточнете:"
 
 #. module: hr_recruitment_survey
 #: model:survey.page,title:hr_recruitment_survey.recruitment_3
@@ -200,17 +198,17 @@ msgstr "Важно"
 #: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_job_survey_id
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "Interview Form"
-msgstr "Форма за интервю"
+msgstr "Формуляр за интервю"
 
 #. module: hr_recruitment_survey
 #: model:ir.model,name:hr_recruitment_survey.model_hr_job
 msgid "Job Position"
-msgstr "Работна позиция"
+msgstr "Длъжност"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_2_1
 msgid "Knowledge"
-msgstr "Познания"
+msgstr "Знания"
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.recruitment_1_2_1
@@ -220,22 +218,22 @@ msgstr "Мъж"
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_5
 msgid "Most important"
-msgstr "Най-важното"
+msgstr "Най-важно"
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "No Interview Form"
-msgstr "Без форма за интервю"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_10
 msgid "No out of hours working"
-msgstr "Баз допълнителен труд извън предвидените часове"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rcol_3_1_1
 msgid "Not important"
-msgstr "Не е ит значение"
+msgstr ""
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_3
@@ -245,17 +243,17 @@ msgstr "Офис среда"
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_6
 msgid "Office location"
-msgstr "Местоположение на офис"
+msgstr "Местоположение на офиса"
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_9
 msgid "Perks such as free parking, gym passes"
-msgstr "Безплатен паркинг, посещения във фитнес зала"
+msgstr "Безплатен паркинг, фитнес зала"
 
 #. module: hr_recruitment_survey
 #: model:ir.ui.view,arch_db:hr_recruitment_survey.crm_case_form_view_job_inherit
 msgid "Print interview report"
-msgstr "Отчет на разпечатани интервюта"
+msgstr "Отпечатай интервюта"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_3_1
@@ -265,7 +263,7 @@ msgstr "Оценете важността"
 #. module: hr_recruitment_survey
 #: model:survey.survey,title:hr_recruitment_survey.recruitment_form
 msgid "Recruitment Form"
-msgstr "Форма за подбор на персонал"
+msgstr "Формуляр за подбор"
 
 #. module: hr_recruitment_survey
 #: model:survey.label,value:hr_recruitment_survey.rrow_2_1_12
@@ -290,7 +288,7 @@ msgstr "Съвременна технология"
 #. module: hr_recruitment_survey
 #: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant_survey_id
 msgid "Survey"
-msgstr "Проучване"
+msgstr "Анкета"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,validation_error_msg:hr_recruitment_survey.recruitment_1_1
@@ -302,14 +300,14 @@ msgstr "Проучване"
 #: model:survey.question,validation_error_msg:hr_recruitment_survey.recruitment_2_4
 #: model:survey.question,validation_error_msg:hr_recruitment_survey.recruitment_3_1
 msgid "The answer you entered has an invalid format."
-msgstr "Въведеният от Вас отговор съдържа невалиден формат."
+msgstr "Въведеният от вас отговор съдържа невалиден формат."
 
 #. module: hr_recruitment_survey
 #: model:survey.survey,description:hr_recruitment_survey.recruitment_form
 msgid ""
 "This form is intended to help the responsible of a recruitment interview."
 msgstr ""
-"Тази форма е предназначена да помогне на отговорното лице в интервю за "
+"Този формуляр е предназначен да помогне на отговорника на интервю за "
 "набиране на персонал."
 
 #. module: hr_recruitment_survey
@@ -332,9 +330,9 @@ msgstr "Много важно"
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_1_3
 msgid "What age group do you belong to?"
-msgstr "Към коя възрастова група принадлежите?"
+msgstr "В каква възрастова група принадлежите?"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,question:hr_recruitment_survey.recruitment_1_2
 msgid "What is your gender?"
-msgstr "Какъв е полът Ви?"
+msgstr "Какъв е вашият пол?"

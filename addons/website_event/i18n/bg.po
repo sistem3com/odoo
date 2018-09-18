@@ -27,12 +27,12 @@ msgstr ""
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_attendee_details
 msgid "(Free)"
-msgstr "(Безплатно)"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.country_events_list
 msgid "<b>Upcoming Events</b>"
-msgstr "<b>Предстоящи събития</b>"
+msgstr "<b>Предстоящи Събития</b>"
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.event_description_full
@@ -46,7 +46,7 @@ msgstr ""
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_template
 msgid "<em>Configure and Launch Event Registration</em>"
-msgstr "<em>Конфигурирайте и стартирайте регистрация за събиитие</em>"
+msgstr "<em>Настрой и Пусни Регистрация за Събиитие</em>"
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.event_description_full
@@ -77,17 +77,17 @@ msgstr "<span>Онлайн събития</span>"
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_template
 msgid "<span>Unlimited</span>"
-msgstr "<span>Неограничен</span>"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_attendee_details
 msgid "<strong>Attendees</strong>"
-msgstr "<strong>Присъстващи</strong>"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_attendee_details
 msgid "<strong>Email</strong>"
-msgstr "<strong>Имейл</strong>"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_attendee_details
@@ -97,30 +97,29 @@ msgstr "<strong>Име</strong>"
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.event_description_full
 msgid "<strong>Participate on Twitter</strong>"
-msgstr "<strong>Включете се в Twitter</strong>"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_attendee_details
 msgid "<strong>Phone</strong> <span class=\"text-muted\">(Optional)</span>"
 msgstr ""
-"<strong>Телефон</strong> <span class=\"text-muted\">(Незадължително)</span>"
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.event_description_full
 msgid "<strong>Use this tag:</strong>"
-msgstr "<strong>Използвайте този маркер:</strong>"
+msgstr ""
 
 #. module: website_event
 #: code:addons/website_event/controllers/main.py:96
 #, python-format
 msgid "All Categories"
-msgstr "Всички категории"
+msgstr "Всички Категории"
 
 #. module: website_event
 #: code:addons/website_event/controllers/main.py:103
 #, python-format
 msgid "All Countries"
-msgstr "Всички държави"
+msgstr "Всички Държави"
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.layout
@@ -355,7 +354,7 @@ msgstr ""
 #: code:addons/website_event/controllers/main.py:51
 #, python-format
 msgid "Next month"
-msgstr "Следващ месец"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.index
@@ -470,7 +469,7 @@ msgstr ""
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_template
 msgid "Sold Out"
-msgstr "Разпродадено"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.404
@@ -487,7 +486,7 @@ msgstr "Тази Седмица"
 #: code:addons/website_event/controllers/main.py:47
 #, python-format
 msgid "This month"
-msgstr "Този месец"
+msgstr ""
 
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_template
@@ -528,12 +527,12 @@ msgstr "Визуализирайте в Google Maps"
 #. module: website_event
 #: model:ir.ui.view,arch_db:website_event.registration_complete
 msgid "We are glad to confirm your registration to our event"
-msgstr "Радваме се да потвърдите регистрацията си за нашето събитие"
+msgstr ""
 
 #. module: website_event
 #: model:ir.actions.act_url,name:website_event.action_open_website
 msgid "Website Home"
-msgstr "Начало на уебсайт"
+msgstr ""
 
 #. module: website_event
 #: model:ir.model.fields,field_description:website_event.field_event_event_website_message_ids

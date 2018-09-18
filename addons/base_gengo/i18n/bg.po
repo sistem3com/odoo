@@ -3,8 +3,8 @@
 # * base_gengo
 # 
 # Translators:
-# Maria Boyadjieva <marabo2000@gmail.com>, 2016
 # kalatchev, 2016
+# Maria Boyadjieva <marabo2000@gmail.com>, 2016
 # Martin Trigaux, 2016
 # Kaloyan Naumov <kaloyan@lumnus.net>, 2016
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 #. module: base_gengo
 #: model:ir.ui.view,arch_db:base_gengo.view_general_configuration_form_inherit_base_gengo
 msgid "Add Gengo login Private Key..."
-msgstr "Добавете поверителен ключ за влизане в системата Gengo"
+msgstr "Добавете личен ключ за влизане в системата Gengo"
 
 #. module: base_gengo
 #: model:ir.ui.view,arch_db:base_gengo.view_general_configuration_form_inherit_base_gengo
@@ -106,7 +106,7 @@ msgstr "Създадено на"
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_gengo_translations_display_name
 msgid "Display Name"
-msgstr "Покажете име"
+msgstr "Име за показване"
 
 #. module: base_gengo
 #: model:ir.ui.view,arch_db:base_gengo.view_ir_translation_inherit_base_gengo_form
@@ -116,13 +116,13 @@ msgstr " Коментари & дейност в Gengo..."
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_ir_translation_order_id
 msgid "Gengo Order ID"
-msgstr "ИН на Gengo поръчка"
+msgstr "Поръчка в Gengo - идентификация"
 
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_config_settings_gengo_private_key
 #: model:ir.model.fields,field_description:base_gengo.field_res_company_gengo_private_key
 msgid "Gengo Private Key"
-msgstr "Поверителен ключ в Gengo "
+msgstr "Личен ключ в Gengo "
 
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_config_settings_gengo_public_key
@@ -133,8 +133,7 @@ msgstr "Общодостъпен ключ в Gengo"
 #. module: base_gengo
 #: model:ir.ui.view,arch_db:base_gengo.base_gengo_translation_wizard_from
 msgid "Gengo Public or Private keys are wrong or missing."
-msgstr ""
-"Поверителните или общодостъпните ключове в Gengo са грешни или липсват."
+msgstr "Личните или общодостъпните ключове в Gengo са грешни или липсват."
 
 #. module: base_gengo
 #: model:ir.ui.view,arch_db:base_gengo.base_gengo_translation_wizard_from
@@ -163,7 +162,7 @@ msgid ""
 "Gengo `Public Key` or `Private Key` are missing. Enter your Gengo "
 "authentication parameters under `Settings > Companies > Gengo Parameters`."
 msgstr ""
-"Липсва `Общодостъпен ключ` или `Поверителен ключ` Gengo. Въведете "
+"Липсва `Общодостъпен ключ` или `Личен ключ` Gengo. Въведете "
 "идентификационните си параметри Gengo съгласно `Настройки > Компании > Gengo"
 " параметри`."
 
@@ -186,7 +185,7 @@ msgstr "Gengo: механична заявка за превод"
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_gengo_translations_id
 msgid "ID"
-msgstr "ИН"
+msgstr "Идентификация"
 
 #. module: base_gengo
 #: model:ir.model.fields,help:base_gengo.field_base_config_settings_gengo_auto_approve
@@ -207,12 +206,12 @@ msgstr "Последно коригирано на"
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_gengo_translations_write_uid
 msgid "Last Updated by"
-msgstr "Последно актуализирано от"
+msgstr "Последно обновено от"
 
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_gengo_translations_write_date
 msgid "Last Updated on"
-msgstr "Последно актуализирано на"
+msgstr "Последно обновено на"
 
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_gengo_translations_sync_limit
@@ -226,14 +225,14 @@ msgid ""
 "translation has to be approved to be uploaded in this system. You are "
 "supposed to do that directly by using your Gengo Account"
 msgstr ""
-"Забележка: Ако състоянието на превода е 'В развитие', това означава, че той "
+"Забележка: Ако етапът на превода е 'В развитие', това означава, че той "
 "трябва да бъде одобрен, за да бъде качен в системата. Вие би трябвало да "
 "направите това директно, използвайки профила си в Gengo"
 
 #. module: base_gengo
 #: model:ir.ui.view,arch_db:base_gengo.view_general_configuration_form_inherit_base_gengo
 msgid "Private Key*"
-msgstr "Поверителен ключ*"
+msgstr "Личен ключ*"
 
 #. module: base_gengo
 #: selection:ir.translation,gengo_translation:0
@@ -294,7 +293,7 @@ msgstr ""
 #. module: base_gengo
 #: model:ir.model.fields,field_description:base_gengo.field_base_gengo_translations_authorized_credentials
 msgid "The private and public keys are valid"
-msgstr "Поверителният и общодостъпният ключ са валидни"
+msgstr "Личният и общодостъпният ключ са валидни"
 
 #. module: base_gengo
 #: model:ir.model.fields,help:base_gengo.field_base_config_settings_gengo_comment

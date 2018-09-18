@@ -54,7 +54,7 @@ msgstr "Позволен"
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
 msgid "Authentication"
-msgstr "Удостоверяване"
+msgstr "Автентичност"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_auth_endpoint
@@ -98,14 +98,14 @@ msgstr ""
 #: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
 msgid "Click on <b>Use Google APIs</b>"
 msgstr ""
-"Натиснете бутона на <b>Използвайте приложн-програмните интерфейси на "
+"Натиснете бутона на <b>Използвайте приложните програмни интерфейси на "
 "Google</b>"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_client_id
 #: model:ir.model.fields,field_description:auth_oauth.field_base_config_settings_auth_oauth_google_client_id
 msgid "Client ID"
-msgstr "ИН на клиент"
+msgstr "Идентификация на клиент"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_ref_company_ids
@@ -175,7 +175,7 @@ msgstr "Фискална позиция"
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
 msgid "Google Client ID:"
-msgstr "ИН на Google клиент:"
+msgstr "Идентификация на клиента в Google:"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_has_unreconciled_entries
@@ -185,7 +185,7 @@ msgstr "Притежава необединени записи"
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_id
 msgid "ID"
-msgstr "ИН"
+msgstr "Идентификация"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_invoice_warn
@@ -211,12 +211,12 @@ msgstr "Последно коригирано на"
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_write_uid
 msgid "Last Updated by"
-msgstr "Последно актуализирано от"
+msgstr "Последно обновено от"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider_write_date
 msgid "Last Updated on"
-msgstr "Последно актуализирано на"
+msgstr "Последно обновено на"
 
 #. module: auth_oauth
 #: model:ir.model.fields,help:auth_oauth.field_res_users_last_time_entries_checked
@@ -242,7 +242,7 @@ msgstr "Съобщение за фактура"
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_oauth_access_token
 msgid "OAuth Access Token"
-msgstr "OAuth токен за достъп"
+msgstr "OAuth означение за достъп"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_oauth_provider_id
@@ -262,7 +262,7 @@ msgstr "OAuth UID трябва да е уникален за всеки дост
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_oauth_uid
 msgid "OAuth User ID"
-msgstr "ИН на OAuth потребител"
+msgstr "OAuth идентификация на потребител"
 
 #. module: auth_oauth
 #: model:ir.model,name:auth_oauth.model_auth_oauth_provider
@@ -295,8 +295,8 @@ msgid ""
 "                                        Client Secret</b>). You have to insert your <b>Client ID</b> in \n"
 "                                        the field below."
 msgstr ""
-"Веднъж извършено, получавате две информации (ИН <b>на Вашия клиент</b> и <b>\n"
-"                                        тайна на клиента</b>). Трябва да въведете <b>ИН на клиента</b> в \n"
+"Веднъж извършено, получавате две информации (Идентификация <b>на Вашия клиент</b> и <b>\n"
+"                                        тайна на клиента</b>). Трябва да въведете <b>идентификация на клиента</b> в \n"
 "                                        полето по-долу."
 
 #. module: auth_oauth
@@ -386,7 +386,7 @@ msgid ""
 "                                        (OAuth 2.0 Client ID)."
 msgstr ""
 "Тогава натиснете бутона <b>Добавете акредитиви</b> и изберете втория вариант \n"
-"                                        (OAuth 2.0 ИН на клиент)."
+"                                        (OAuth 2.0 идентификация на клиент)."
 
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration

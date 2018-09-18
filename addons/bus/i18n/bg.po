@@ -4,8 +4,8 @@
 # 
 # Translators:
 # Maria Boyadjieva <marabo2000@gmail.com>, 2016
-# Martin Trigaux, 2016
 # kalatchev, 2016
+# Martin Trigaux, 2016
 # Albena Mincheva <albena_vicheva@abv.bg>, 2018
 # Boris Stefanov <borkata@gmail.com>, 2018
 msgid ""
@@ -72,7 +72,7 @@ msgstr "Дата на геолокация"
 #: model:ir.model.fields,field_description:bus.field_bus_bus_id
 #: model:ir.model.fields,field_description:bus.field_bus_presence_id
 msgid "ID"
-msgstr "ИН"
+msgstr "Идентификация"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_presence_status
@@ -100,12 +100,12 @@ msgstr "Последно присъствие"
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_write_uid
 msgid "Last Updated by"
-msgstr "Последно актуализирано от"
+msgstr "Последно обновено от"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_write_date
 msgid "Last Updated on"
-msgstr "Последно актуализирано на"
+msgstr "Последно обновено на"
 
 #. module: bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_message

@@ -3,6 +3,7 @@
 # * payment_adyen
 # 
 # Translators:
+# Bernard <bernard@abv.bg>, 2016
 # Maria Boyadjieva <marabo2000@gmail.com>, 2016
 msgid ""
 msgstr ""
@@ -34,19 +35,19 @@ msgstr "; не е открита поръчка"
 #: code:addons/payment_adyen/models/payment.py:229
 #, python-format
 msgid "Adyen: feedback error"
-msgstr "Adyen: грешка при обратна връзка"
+msgstr ""
 
 #. module: payment_adyen
 #: code:addons/payment_adyen/models/payment.py:191
 #, python-format
 msgid "Adyen: invalid merchantSig, received %s, computed %s"
-msgstr "Adyen: невалиден търговецSig, получен %s, изчислен %s"
+msgstr ""
 
 #. module: payment_adyen
 #: code:addons/payment_adyen/models/payment.py:177
 #, python-format
 msgid "Adyen: received data for reference %s"
-msgstr "Adyen: получени данни за референция %s"
+msgstr ""
 
 #. module: payment_adyen
 #: code:addons/payment_adyen/models/payment.py:170
@@ -55,35 +56,33 @@ msgid ""
 "Adyen: received data with missing reference (%s) or missing pspReference "
 "(%s)"
 msgstr ""
-"Adyen: получени данни с липсваща референция (%s) или липсваща pspReference "
-"(%s)"
 
 #. module: payment_adyen
 #: model:ir.ui.view,arch_db:payment_adyen.acquirer_form_adyen
 msgid "How to configure your Adyen account?"
-msgstr "Как да конфигурирате сметката си Adyen?"
+msgstr ""
 
 #. module: payment_adyen
 #: model:ir.model.fields,field_description:payment_adyen.field_payment_acquirer_adyen_merchant_account
 msgid "Merchant Account"
-msgstr "Търговска сметка"
+msgstr ""
 
 #. module: payment_adyen
 #: model:ir.model,name:payment_adyen.model_payment_acquirer
 msgid "Payment Acquirer"
-msgstr "Обработчик на плащане"
+msgstr "Обработчик на плащането"
 
 #. module: payment_adyen
 #: model:ir.model,name:payment_adyen.model_payment_transaction
 msgid "Payment Transaction"
-msgstr "Платежна транзакция"
+msgstr "Плащане"
 
 #. module: payment_adyen
 #: model:ir.model.fields,field_description:payment_adyen.field_payment_acquirer_adyen_skin_code
 msgid "Skin Code"
-msgstr "Skin Code"
+msgstr ""
 
 #. module: payment_adyen
 #: model:ir.model.fields,field_description:payment_adyen.field_payment_acquirer_adyen_skin_hmac_key
 msgid "Skin HMAC Key"
-msgstr "Skin HMAC Key"
+msgstr ""

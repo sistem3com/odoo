@@ -44,12 +44,12 @@ msgstr "# Запис на актив"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_depreciation_nbr
 msgid "# of Depreciation Lines"
-msgstr "# на амортизационни редове "
+msgstr "# от амортизационни редове "
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_installment_nbr
 msgid "# of Installment Lines"
-msgstr "# на редове на вноски"
+msgstr "# от редове на вноски"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_depreciation_confirmation_wizard_date
@@ -82,7 +82,7 @@ msgstr ""
 msgid ""
 "Account used to record the purchase of the asset at its original price."
 msgstr ""
-"Сметка, използвана да регистрира придобиване на актив на първоначалната му "
+"Сметка, използвана да регистрира придобиване актив на първоначалната му "
 "цена."
 
 #. module: account_asset
@@ -105,7 +105,7 @@ msgstr "Сума"
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_depreciation_value
 msgid "Amount of Depreciation Lines"
-msgstr "Сбор на амортизационни редове"
+msgstr "Сума от амортизационни редове"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_asset_asset_report_installment_value
@@ -244,7 +244,7 @@ msgstr "Активи в затворено състояние"
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_account_asset_search
 msgid "Assets in draft and open states"
-msgstr "Активи в състояние 'чернова' и 'отворени'"
+msgstr "Активи в състояние чернова и отворени"
 
 #. module: account_asset
 #: model:ir.ui.view,arch_db:account_asset.view_asset_asset_report_search
@@ -658,7 +658,7 @@ msgstr "Групирайте записи в журнала"
 #: model:ir.model.fields,field_description:account_asset.field_asset_depreciation_confirmation_wizard_id
 #: model:ir.model.fields,field_description:account_asset.field_asset_modify_id
 msgid "ID"
-msgstr "ИН"
+msgstr "Идентификация"
 
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_asset_prorata
@@ -732,7 +732,7 @@ msgstr "Последно коригирано на"
 #: model:ir.model.fields,field_description:account_asset.field_asset_depreciation_confirmation_wizard_write_uid
 #: model:ir.model.fields,field_description:account_asset.field_asset_modify_write_uid
 msgid "Last Updated by"
-msgstr "Последно актуализирано от"
+msgstr "Последно обновено от"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_write_date
@@ -741,7 +741,7 @@ msgstr "Последно актуализирано от"
 #: model:ir.model.fields,field_description:account_asset.field_asset_depreciation_confirmation_wizard_write_date
 #: model:ir.model.fields,field_description:account_asset.field_asset_modify_write_date
 msgid "Last Updated on"
-msgstr "Последно актуализирано на"
+msgstr "Последно обновено на"
 
 #. module: account_asset
 #: selection:account.asset.asset,method:0
@@ -969,12 +969,12 @@ msgstr "Настройте на чернова"
 #. module: account_asset
 #: model:ir.model.fields,help:account_asset.field_account_asset_category_method_period
 msgid "State here the time between 2 depreciations, in months"
-msgstr "Посочете тук времето между 2 амортизации, в месеци"
+msgstr "Постановете тук времето между 2 амортизации, в месеци"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_depreciation_line_parent_state
 msgid "State of Asset"
-msgstr "Състояние на актив"
+msgstr "Състояние актив"
 
 #. module: account_asset
 #: model:ir.model.fields,field_description:account_asset.field_account_asset_asset_state

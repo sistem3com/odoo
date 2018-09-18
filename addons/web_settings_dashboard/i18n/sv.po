@@ -29,14 +29,14 @@ msgid ""
 "                Implementation"
 msgstr ""
 "%\n"
-"                implementerat"
+"                Implementation"
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:149
 #, python-format
 msgid "(Community Edition)"
-msgstr "(Användarföreningens utgåva)"
+msgstr "(Community Edition)"
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -64,7 +64,7 @@ msgstr "Aktiva användare"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:57
 #, python-format
 msgid "Active Users"
-msgstr "aktiva användare"
+msgstr "Aktiva användare"
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -78,7 +78,7 @@ msgstr "App-butiken"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:39
 #, python-format
 msgid "Browse Apps"
-msgstr "Bläddra bland appar"
+msgstr "Bläddra bland appas"
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -155,7 +155,7 @@ msgstr "Installerade appar"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:32
 #, python-format
 msgid "Installed Apps"
-msgstr "installerade appar"
+msgstr "Installerade appar"
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -218,7 +218,7 @@ msgstr "Odoo S.A."
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:73
 #, python-format
 msgid "Pending invitations:"
-msgstr "Utestående inbjudningar:"
+msgstr "Väntande inbjudningar:"
 
 #. module: web_settings_dashboard
 #. openerp-web
