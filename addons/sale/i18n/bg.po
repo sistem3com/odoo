@@ -8,23 +8,23 @@
 # kalatchev, 2016
 # Maria Boyadjieva <marabo2000@gmail.com>, 2016
 # Radina <radis.choice@gmail.com>, 2016
-# Любо Енев, 2016
-# Anton Vassilev, 2016
 # Todor Mladenov <tmladenov@dir.bg>, 2016
 # Vihren Kanev <vihren.kanev@gmail.com>, 2016
 # preslav <hackerz99999@gmail.com>, 2016
+# Anton Vassilev, 2016
 # aleksandar ivanov, 2018
 # Albena Mincheva <albena_vicheva@abv.bg>, 2018
 # Chudomir Monevski <cm@plana.solutions>, 2018
 # Boyan Rabchev <boyan.rabchev@plana.solutions>, 2018
 # Boris Stefanov <borkata@gmail.com>, 2018
+# Igor Sheludko <igor.sheludko@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-08 13:18+0000\n"
 "PO-Revision-Date: 2018-03-08 13:18+0000\n"
-"Last-Translator: Boris Stefanov <borkata@gmail.com>, 2018\n"
+"Last-Translator: Igor Sheludko <igor.sheludko@gmail.com>, 2018\n"
 "Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,27 +119,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale.field_product_product_sales_count
 #: model:ir.model.fields,field_description:sale.field_product_template_sales_count
 msgid "# Sales"
-msgstr "бр. продажби"
+msgstr "# Продажби"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_invoice_count
 msgid "# of Invoices"
-msgstr "бр. фактури"
+msgstr "# на фактури"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report_nbr
 msgid "# of Lines"
-msgstr "# от редове"
+msgstr "# на редове"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv_count
 msgid "# of Orders"
-msgstr "# от поръчки"
+msgstr "# на поръчки"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report_product_uom_qty
 msgid "# of Qty"
-msgstr "# от кол."
+msgstr "# на количество"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_partner_sale_order_count
@@ -153,6 +153,8 @@ msgid ""
 "${(object.name or '').replace('/','_')}${object.state == 'draft' and "
 "'_draft' or ''}"
 msgstr ""
+"${(object.name or '').replace('/','_')}${object.state == 'draft' and "
+"'_draft' or ''}"
 
 #. module: sale
 #: model:mail.template,subject:sale.email_template_edi_sale
@@ -160,8 +162,8 @@ msgid ""
 "${object.company_id.name} ${object.state in ('draft', 'sent') and "
 "'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
 msgstr ""
-"${object.company_id.name} ${object.state in ('draft', 'sent') and "
-"'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
+"${object.company_id.name} ${object.state в ('чернова', 'изпратена') и "
+"'оферта' или 'поръчка'} (Реф. ${object.name or 'n/a' })"
 
 #. module: sale
 #: model:mail.template,subject:sale.mail_template_data_notification_email_sale_order
@@ -177,7 +179,7 @@ msgstr "&amp;bull;"
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
 msgid "(update)"
-msgstr "(обнови)"
+msgstr "(актуализация)"
 
 #. module: sale
 #. openerp-web
@@ -187,6 +189,8 @@ msgid ""
 "<b>Invite salespeople or managers</b> via email.<br/><i>Enter one email per "
 "line.</i>"
 msgstr ""
+"<b>Канете търговци или мениджъри</b> по имейл.<br/><i>Въвеждайте по един "
+"имейл за ред.</i>"
 
 #. module: sale
 #: model:mail.template,body_html:sale.mail_template_data_notification_email_sale_order
@@ -264,6 +268,78 @@ msgid ""
 "                </html>\n"
 "            "
 msgstr ""
+"<html>\n"
+"                <head></head>\n"
+"                % set record = ctx.get('record')\n"
+"                % set company = record and record.company_id or user.company_id\n"
+"                <body style=\"margin: 0; padding: 0;\">\n"
+"                <table border=\"0\" width=\"100%\" cellpadding=\"0\" bgcolor=\"#ededed\" style=\"padding: 20px; background-color: #ededed; border-collapse:separate;\" summary=\"o_mail_notification\">\n"
+"                    <tbody>\n"
+"\n"
+"                      <!-- ГОРЕН КОЛОНТИТУЛ -->\n"
+"                      <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                          <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                            <tr>\n"
+"                              <td valign=\"middle\">\n"
+"                                  <span style=\"font-size:20px; color:white; font-weight: bold;\">\n"
+"                                      ${object.record_name}\n"
+"                                  </span>\n"
+"                              </td>\n"
+"                              <td valign=\"middle\" align=\"right\">\n"
+"                                  <img src=\"/logo.png?company=${company.id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${company.name}\">\n"
+"                              </td>\n"
+"                            </tr>\n"
+"                          </table>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"\n"
+"                      <!-- СЪДЪРЖАНИЕ -->\n"
+"                      <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                          <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#ffffff\" style=\"min-width: 590px; background-color: rgb(255, 255, 255); padding: 20px; border-collapse:separate;\">\n"
+"                            <tbody>\n"
+"                              <td valign=\"top\" style=\"font-family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;\">\n"
+"                                ${object.body | safe}\n"
+"                              </td>\n"
+"                            </tbody>\n"
+"                          </table>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"\n"
+"                      <!-- ДОЛЕН КОЛОНТИТУЛ -->\n"
+"                      <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                          <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                            <tr>\n"
+"                              <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                                ${company.name}<br/>\n"
+"                                ${company.phone or ''}\n"
+"                              </td>\n"
+"                              <td valign=\"middle\" align=\"right\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                                % if company.email:\n"
+"                                <a href=\"mailto:${company.email}\" style=\"text-decoration:none; color: white;\">${company.email}</a><br/>\n"
+"                                % endif\n"
+"                                % if company.website:\n"
+"                                    <a href=\"${company.website}\" style=\"text-decoration:none; color: white;\">\n"
+"                                        ${company.website}\n"
+"                                    </a>\n"
+"                                % endif\n"
+"                              </td>\n"
+"                            </tr>\n"
+"                          </table>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td align=\"center\">\n"
+"                            Осъществено от<a href=\"https://www.odoo.com\">Odoo</a>.\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"                </body>\n"
+"                </html>\n"
+"            "
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_orders_upselling
@@ -272,13 +348,16 @@ msgid ""
 "                to buy an extra pack of hours, because he used all his support\n"
 "                hours.</i>"
 msgstr ""
+"<i>Пример: предплатени оферти за услуги, за които клиентът трябва\n"
+"                да купи допълнителен пакет часове, тъй като е използвал всичките си часове\n"
+"                за поддръжка.</i>"
 
 #. module: sale
 #. openerp-web
 #: code:addons/sale/static/src/js/tour.js:64
 #, python-format
 msgid "<p><b>Confirm the order</b> if the customer purchases.</p>"
-msgstr ""
+msgstr "<p><b>Потвърдете поръчката,</b> ако клиентът пазарува.</p>"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_sales_config
@@ -291,7 +370,7 @@ msgstr ""
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Fiscal Position Remark:</strong>"
-msgstr "<strong>Фискална позиция отбелязване:</strong>"
+msgstr "<strong>Забележка за фискална позиция:</strong>"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -333,7 +412,7 @@ msgstr "<strong>Вашата референция:</strong>"
 #. module: sale
 #: selection:sale.config.settings,sale_pricelist_setting:0
 msgid "A single sale price per product"
-msgstr "Една продажна цена за продукт"
+msgstr "Единична продажна цена за продукт"
 
 #. module: sale
 #: model:res.groups,name:sale.group_warning_sale
@@ -407,6 +486,7 @@ msgstr ""
 msgid ""
 "Allows you to select and maintain different units of measure for products."
 msgstr ""
+"Позволява Ви да избирате и поддържате различни мерни единици за продуктите."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_account_config_settings_group_analytic_account_for_sales
@@ -464,12 +544,12 @@ msgstr ""
 #. module: sale
 #: selection:product.template,expense_policy:0
 msgid "At sale price"
-msgstr ""
+msgstr "При продажна цена"
 
 #. module: sale
 #: model:ir.ui.menu,name:sale.menu_variants_action
 msgid "Attribute Values"
-msgstr "Стойности на Атрибута"
+msgstr "Атрибутивни стойности"
 
 #. module: sale
 #: model:ir.ui.menu,name:sale.menu_attribute_action
@@ -777,7 +857,7 @@ msgstr "Отстъпка (%)"
 #. module: sale
 #: selection:product.pricelist,discount_policy:0
 msgid "Discount included in the price"
-msgstr ""
+msgstr "Отстъпка, включена в цената"
 
 #. module: sale
 #: model:res.groups,name:sale.group_discount_per_so_line
@@ -805,7 +885,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_display_name
 #: model:ir.model.fields,field_description:sale.field_sale_report_display_name
 msgid "Display Name"
-msgstr "Име за показване"
+msgstr "Покажете име"
 
 #. module: sale
 #: model:res.groups,name:sale.group_display_incoterm
@@ -920,12 +1000,12 @@ msgstr "Брутно тегло"
 #: model:ir.ui.view,arch_db:sale.view_sales_order_filter
 #: model:ir.ui.view,arch_db:sale.view_sales_order_line_filter
 msgid "Group By"
-msgstr "Групиране по"
+msgstr "Групирайте по"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_configuration_search_view
 msgid "Group By Name"
-msgstr "Групирай по Име"
+msgstr "Групирайте по име"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv_id
@@ -934,7 +1014,7 @@ msgstr "Групирай по Име"
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_id
 #: model:ir.model.fields,field_description:sale.field_sale_report_id
 msgid "ID"
-msgstr "ID"
+msgstr "ИН"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
@@ -1154,7 +1234,7 @@ msgstr "Последно променено на"
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_write_uid
 #: model:ir.model.fields,field_description:sale.field_sale_order_write_uid
 msgid "Last Updated by"
-msgstr "Последно обновено от"
+msgstr "Последно актуализирано от"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv_write_date
@@ -1162,7 +1242,7 @@ msgstr "Последно обновено от"
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_write_date
 #: model:ir.model.fields,field_description:sale.field_sale_order_write_date
 msgid "Last Updated on"
-msgstr "Последно обновено на"
+msgstr "Последно актуализирано на"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_account_invoice_line_layout_category_sequence
@@ -1214,6 +1294,9 @@ msgid ""
 "Timesheets on contract: Invoice based on the tracked hours on the related timesheet.\n"
 "Create a task and track hours: Create a task on the sale order validation and track the work hours."
 msgstr ""
+"Механично настроени количества по поръчка: фактура въз основа на механично въведено количество, без да се създава аналитична сметка.\n"
+"Графици на договор: фактура въз основа на проследените часове в съответния график.\n"
+"Създайте задача и проследете часовете: Създайте задача за потвърждаване поръчката за продажба и проследете работните часове."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_validity_date
@@ -1373,7 +1456,7 @@ msgstr "Онлайн оферти"
 #: code:addons/sale/static/src/js/sale.js:26
 #, python-format
 msgid "Only Integer Value should be valid."
-msgstr ""
+msgstr "Валидни са единствено стойности на цели числа"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_sales_order_line_filter
@@ -1523,6 +1606,8 @@ msgid ""
 "Please define income account for this product: \"%s\" (id:%d) - or for its "
 "category: \"%s\"."
 msgstr ""
+"Моля, определете приходна сметка за този продукт: \"%s\" (ИН:%d) - или за "
+"нейната категория: \"%s\"."
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_invoice_layouted
@@ -1538,19 +1623,19 @@ msgstr "Намаляне на Цената"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_price_reduce_taxexcl
 msgid "Price Reduce Tax excl"
-msgstr ""
+msgstr "Понижение на цена при изключен данък"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_price_reduce_taxinc
 msgid "Price Reduce Tax inc"
-msgstr "Намалена цена с включени такси"
+msgstr "Понижение на цена при включен данък"
 
 #. module: sale
 #: model:ir.model,name:sale.model_product_pricelist
 #: model:ir.model.fields,field_description:sale.field_sale_order_pricelist_id
 #: model:ir.model.fields,field_description:sale.field_sale_report_pricelist_id
 msgid "Pricelist"
-msgstr "Ценоразпис"
+msgstr "Ценова листа "
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_pricelist_id
@@ -1639,11 +1724,13 @@ msgid ""
 "Products can have several attributes, defining variants (Example: size, "
 "color,...)"
 msgstr ""
+"Продуктите могат да имат няколко атрибута, определящи варианти (пример: "
+"размер, цвят и т.н.)"
 
 #. module: sale
 #: selection:sale.config.settings,group_uom:0
 msgid "Products have only one unit of measure (easier)"
-msgstr ""
+msgstr "Продуктите имат само една мерна единица (по-лесно)"
 
 #. module: sale
 #: model:res.groups,name:sale.group_mrp_properties
@@ -1735,7 +1822,7 @@ msgstr "Оферти"
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_sales_config
 msgid "Quotations & Sales"
-msgstr ""
+msgstr "Оферти & продажби"
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_order_report_quotation_salesteam
@@ -1750,13 +1837,13 @@ msgstr "Изпратени Оферти"
 #. module: sale
 #: model:ir.actions.act_window,name:sale.act_res_partner_2_sale_order
 msgid "Quotations and Sales"
-msgstr ""
+msgstr "Оферти и продажби"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_product_product_expense_policy
 #: model:ir.model.fields,field_description:sale.field_product_template_expense_policy
 msgid "Re-Invoice Expenses"
-msgstr ""
+msgstr "Префактурирайте разходи"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_origin
@@ -2165,11 +2252,28 @@ msgid "Terms and conditions"
 msgstr "Срокове и условия"
 
 #. module: sale
-#: code:addons/sale/models/sale_analytic.py:84
+#: code:addons/sale/models/sale_analytic.py:117
 #, python-format
 msgid ""
-"The Sale Order %s linked to the Analytic Account must be validated before "
-"registering expenses."
+"The Sales Order %s linked to the Analytic Account %s is cancelled. You "
+"cannot register an expense on a cancelled Sales Order."
+msgstr ""
+
+#. module: sale
+#: code:addons/sale/models/sale_analytic.py:112
+#, python-format
+msgid ""
+"The Sales Order %s linked to the Analytic Account %s must be validated "
+"before registering expenses."
+msgstr ""
+
+#. module: sale
+#: code:addons/sale/models/sale_analytic.py:115
+#, python-format
+msgid ""
+"The Sales Order %s linked to the Analytic Account %s is currently locked. "
+"You cannot register an expense on a locked Sales Order. Please create a new "
+"SO linked to this Analytic Account."
 msgstr ""
 
 #. module: sale
@@ -2220,6 +2324,7 @@ msgstr ""
 #, python-format
 msgid "The value of the down payment amount must be positive."
 msgstr ""
+"Стойността на размера на авансовото плащане трябва да бъде положителна."
 
 #. module: sale
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:74
@@ -2293,7 +2398,7 @@ msgstr ""
 #. module: sale
 #: selection:product.template,track_service:0
 msgid "Timesheets on project"
-msgstr ""
+msgstr "Графици на проект"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_qty_to_invoice
@@ -2399,6 +2504,7 @@ msgstr "Използвайте ценовите листи, за да адапт
 #, python-format
 msgid "Use the breadcrumbs to <b>go back to preceeding screens</b>."
 msgstr ""
+"Използвайте навигацията, за да <b>се върнете към предшестващите екрани</b>."
 
 #. module: sale
 #. openerp-web
@@ -2466,7 +2572,7 @@ msgstr ""
 #: code:addons/sale/static/src/js/sale.js:26
 #, python-format
 msgid "Wrong value entered!"
-msgstr ""
+msgstr "Въведохте грешна стойност!"
 
 #. module: sale
 #: code:addons/sale/models/sale.py:165

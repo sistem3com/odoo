@@ -96,7 +96,7 @@ msgstr "Банкови такси"
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
 msgid "Bank Journal Name"
-msgstr "Име на банковия журнал"
+msgstr "Име на банков журнал"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_data_file
@@ -261,7 +261,7 @@ msgstr "Групирайте редове на фактури"
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_id
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_id
 msgid "ID"
-msgstr "Идентификация"
+msgstr "ИН"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation_group_invoice_lines
@@ -295,7 +295,7 @@ msgstr "Въведете банкови извлечения"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_line_unique_import_id
 msgid "Import ID"
-msgstr "Въветете идентификация"
+msgstr "Въветете ИН"
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.journal_dashboard_view_inherit
@@ -332,7 +332,7 @@ msgstr "Име на журнал"
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_journal_id
 msgid "Journal id"
-msgstr "Журнал - идентификация"
+msgstr "ИН на журнал"
 
 #. module: account_bank_statement_import
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
@@ -364,13 +364,13 @@ msgstr "Последно коригирано на"
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_write_uid
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_write_uid
 msgid "Last Updated by"
-msgstr "Последно обновено от"
+msgstr "Последно актуализирано от"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_write_date
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_write_date
 msgid "Last Updated on"
-msgstr "Последно обновено на"
+msgstr "Последно актуализирано на"
 
 #. module: account_bank_statement_import
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_loss_account_id
