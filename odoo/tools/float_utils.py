@@ -73,7 +73,7 @@ def float_round(value, precision_digits=None, precision_rounding=None, rounding_
     normalized_value = value / rounding_factor # normalize
     sign = math.copysign(1.0, normalized_value)
     epsilon_magnitude = math.log(abs(normalized_value), 2)
-    epsilon = 2**(epsilon_magnitude-53)
+    epsilon = 2**(epsilon_magnitude-52)
 
     # TIE-BREAKING: UP/DOWN (for ceiling[resp. flooring] operations)
     # When rounding the value up[resp. down], we instead subtract[resp. add] the epsilon value
@@ -171,7 +171,7 @@ def float_repr(value, precision_digits):
         :param int precision_digits: number of fractional digits to
                                      include in the output
     """
-    # Can't use str() here because it seems to have an intrisic
+    # Can't use str() here because it seems to have an intrinsic
     # rounding to 12 significant digits, which causes a loss of
     # precision. e.g. str(123456789.1234) == str(123456789.123)!!
     return ("%%.%sf" % precision_digits) % value

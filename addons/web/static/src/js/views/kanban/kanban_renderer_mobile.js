@@ -30,6 +30,41 @@ KanbanRenderer.include({
     init: function () {
         this._super.apply(this, arguments);
         this.activeColumnIndex = 0; // index of the currently displayed column
+        this._scrollPosition = null;
+    },
+    /**
+     * As this renderer defines its own scrolling area (the column in grouped
+     * mode), we override this hook to restore the scroll position like it was
+     * when the renderer has been last detached.
+     *
+     * @override
+     */
+    on_attach_callback: function () {
+        if (this._scrollPosition && this.state.groupedBy.length && this.widgets.length) {
+            var $column = this.widgets[this.activeColumnIndex].$el;
+            $column.scrollLeft(this._scrollPosition.left);
+            $column.scrollTop(this._scrollPosition.top);
+        }
+        this._super.apply(this, arguments);
+    },
+    /**
+     * As this renderer defines its own scrolling area (the column in grouped
+     * mode), we override this hook to store the scroll position, so that we can
+     * restore it if the renderer is re-attached to the DOM later.
+     *
+     * @override
+     */
+    on_detach_callback: function () {
+        if (this.state.groupedBy.length && this.widgets.length) {
+            var $column = this.widgets[this.activeColumnIndex].$el;
+            this._scrollPosition = {
+                left: $column.scrollLeft(),
+                top: $column.scrollTop(),
+            };
+        } else {
+            this._scrollPosition = null;
+        }
+        this._super.apply(this, arguments);
     },
 
     //--------------------------------------------------------------------------
@@ -38,9 +73,11 @@ KanbanRenderer.include({
 
     /**
      * Displays the quick create record in the active column
+     *
+     * @returns {Deferred}
      */
     addQuickCreate: function () {
-        this.widgets[this.activeColumnIndex].addQuickCreate();
+        return this.widgets[this.activeColumnIndex].addQuickCreate();
     },
     /**
      * Overrides to restore the left property and the scrollTop on the updated
@@ -53,10 +90,15 @@ KanbanRenderer.include({
         var index = _.findIndex(this.widgets, {db_id: localID});
         var $column = this.widgets[index].$el;
         var left = $column.css('left');
+        var right = $column.css('right');
         var scrollTop = $column.scrollTop();
         return this._super.apply(this, arguments).then(function () {
             $column = self.widgets[index].$el;
-            $column.css({left: left});
+            if (_t.database.parameters.direction === 'rtl') {
+                $column.css({right: right});
+            } else {
+                $column.css({left: left});
+            }
             $column.scrollTop(scrollTop); // required when clicking on 'Load More'
             self._enableSwipe();
         });
@@ -75,12 +117,13 @@ KanbanRenderer.include({
     _enableSwipe: function () {
         var self = this;
         var currentColumn = this.widgets[this.activeColumnIndex];
+        var step = _t.database.parameters.direction === 'rtl' ? -1 : 1;
         currentColumn.$el.swipe({
             swipeLeft: function () {
-                self._moveToGroup(self.activeColumnIndex + 1, self.ANIMATE);
+                self._moveToGroup(self.activeColumnIndex + step, self.ANIMATE);
             },
             swipeRight: function () {
-                self._moveToGroup(self.activeColumnIndex - 1, self.ANIMATE);
+                self._moveToGroup(self.activeColumnIndex - step, self.ANIMATE);
             }
         });
     },
@@ -111,22 +154,32 @@ KanbanRenderer.include({
                     var columnID = column.id || column.db_id;
                     var $column = self.$('.o_kanban_group[data-id="' + columnID + '"]');
                     var $tab = self.$('.o_kanban_mobile_tab[data-id="' + columnID + '"]');
+                    var colPosition, tabPosition;
                     if (index === moveToIndex - 1) {
-                        $column[updateFunc]({left: '-100%'});
-                        $tab[updateFunc]({left: '0%'});
+                        colPosition = '-100%';
+                        tabPosition = '0%';
                     } else if (index === moveToIndex + 1) {
-                        $column[updateFunc]({left: '100%'});
-                        $tab[updateFunc]({left: '100%'});
+                        colPosition = '100%';
+                        tabPosition = '100%';
                     } else if (index === moveToIndex) {
-                        $column[updateFunc]({left: '0%'});
-                        $tab[updateFunc]({left: '50%'});
+                        colPosition = '0%';
+                        tabPosition = '50%';
                         $tab.addClass('o_current');
                     } else if (index < moveToIndex) {
-                        $column.css({left: '-100%'});
-                        $tab[updateFunc]({left: '-100%'});
+                        colPosition = '-100%';
+                        tabPosition = '-100%';
                     } else if (index > moveToIndex) {
-                        $column.css({left: '100%'});
-                        $tab[updateFunc]({left: '200%'});
+                        colPosition = '100%';
+                        tabPosition = '200%';
+                    } else {
+                        return;
+                    }
+                    if (_t.database.parameters.direction === 'rtl') {
+                        $column[updateFunc]({right: colPosition});
+                        $tab[updateFunc]({right: tabPosition});
+                    } else {
+                        $column[updateFunc]({left: colPosition});
+                        $tab[updateFunc]({left: tabPosition});
                     }
                 });
                 def.resolve();

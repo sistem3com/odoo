@@ -1,14 +1,15 @@
 odoo.define('hr_attendance.kiosk_mode', function (require) {
 "use strict";
 
+var AbstractAction = require('web.AbstractAction');
 var ajax = require('web.ajax');
 var core = require('web.core');
-var Widget = require('web.Widget');
 var Session = require('web.session');
+
 var QWeb = core.qweb;
 
 
-var KioskMode = Widget.extend({
+var KioskMode = AbstractAction.extend({
     events: {
         "click .o_hr_attendance_button_employees": function(){ this.do_action('hr_attendance.hr_employee_attendance_action_kanban'); },
     },
@@ -35,6 +36,7 @@ var KioskMode = Widget.extend({
 
     _onBarcodeScanned: function(barcode) {
         var self = this;
+        core.bus.off('barcode_scanned', this, this._onBarcodeScanned);
         this._rpc({
                 model: 'hr.employee',
                 method: 'attendance_scan',
@@ -45,14 +47,17 @@ var KioskMode = Widget.extend({
                     self.do_action(result.action);
                 } else if (result.warning) {
                     self.do_warn(result.warning);
+                    core.bus.on('barcode_scanned', self, self._onBarcodeScanned);
                 }
+            }, function () {
+                core.bus.on('barcode_scanned', self, self._onBarcodeScanned);
             });
     },
 
     start_clock: function() {
-        this.clock_start = setInterval(function() {this.$(".o_hr_attendance_clock").text(new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'}));}, 500);
+        this.clock_start = setInterval(function() {this.$(".o_hr_attendance_clock").text(new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit', second:'2-digit'}));}, 500);
         // First clock refresh before interval to avoid delay
-        this.$(".o_hr_attendance_clock").text(new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'}));
+        this.$(".o_hr_attendance_clock").show().text(new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit', second:'2-digit'}));
     },
 
     destroy: function () {
@@ -64,7 +69,7 @@ var KioskMode = Widget.extend({
 
     _callServer: function () {
         // Make a call to the database to avoid the auto close of the session
-        return ajax.rpc("/web/webclient/version_info", {});
+        return ajax.rpc("/hr_attendance/kiosk_keepalive", {});
     },
 
 });

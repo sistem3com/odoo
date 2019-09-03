@@ -9,6 +9,7 @@ from odoo.tools import float_compare
 class StockScrap(models.Model):
     _name = 'stock.scrap'
     _order = 'id desc'
+    _description = 'Scrap'
 
     def _get_default_scrap_location_id(self):
         return self.env['stock.location'].search([('scrap_location', '=', True), ('company_id', 'in', [self.env.user.company_id.id, False])], limit=1).id
@@ -26,10 +27,10 @@ class StockScrap(models.Model):
         states={'done': [('readonly', True)]})
     origin = fields.Char(string='Source Document')
     product_id = fields.Many2one(
-        'product.product', 'Product',
+        'product.product', 'Product', domain=[('type', 'in', ['product', 'consu'])],
         required=True, states={'done': [('readonly', True)]})
     product_uom_id = fields.Many2one(
-        'product.uom', 'Unit of Measure',
+        'uom.uom', 'Unit of Measure',
         required=True, states={'done': [('readonly', True)]})
     tracking = fields.Selection('Product Tracking', readonly=True, related="product_id.tracking")
     lot_id = fields.Many2one(
@@ -105,7 +106,8 @@ class StockScrap(models.Model):
     def do_scrap(self):
         for scrap in self:
             move = self.env['stock.move'].create(scrap._prepare_move_values())
-            move._action_done()
+            # master: replace context by cancel_backorder
+            move.with_context(is_scrap=True)._action_done()
             scrap.write({'move_id': move.id, 'state': 'done'})
         return True
 
@@ -130,7 +132,8 @@ class StockScrap(models.Model):
                                                             self.package_id,
                                                             self.owner_id,
                                                             strict=True).mapped('quantity'))
-        if float_compare(available_qty, self.scrap_qty, precision_digits=precision) >= 0:
+        scrap_qty = self.product_uom_id._compute_quantity(self.scrap_qty, self.product_id.uom_id)
+        if float_compare(available_qty, scrap_qty, precision_digits=precision) >= 0:
             return self.do_scrap()
         else:
             return {

@@ -6,6 +6,7 @@ var base = require('web_editor.base');
 
 tour.register('rte_translator', {
     test: true,
+    url: '/',
     wait_for: base.ready(),
 }, [{
     content: "click on Add a language",
@@ -19,10 +20,13 @@ tour.register('rte_translator', {
     trigger: '.modal-footer button:first',
     extra_trigger: '.modal select[name="lang"]:propValueContains(fr_BE)',
 }, {
+    content : "click language dropdown",
+    trigger : '.js_language_selector .dropdown-toggle',
+    timeout: 60000,
+}, {
     content: "go to english version",
     trigger: '.js_language_selector a[data-lang="en_US"]',
     extra_trigger: 'html[lang*="fr"]',
-    timeout: 60000,
 }, {
     content: "Open new page menu",
     trigger: '#new-content-menu > a',
@@ -41,7 +45,7 @@ tour.register('rte_translator', {
 }, {
     content: "drop a snippet",
     trigger: "#snippet_structure .oe_snippet:eq(1) .oe_snippet_thumbnail",
-    run: 'drag_and_drop',
+    run: 'drag_and_drop #wrap',
 }, {
     content: "change content",
     trigger: '.oe_overlay_options .oe_options:visible',
@@ -56,6 +60,10 @@ tour.register('rte_translator', {
     content: "save",
     trigger: 'button[data-action=save]',
     extra_trigger: '#wrap p:first b',
+
+}, {
+    content : "click language dropdown",
+    trigger : '.js_language_selector .dropdown-toggle',
 }, {
     content: "click on french version",
     trigger: '.js_language_selector a[data-lang="fr_BE"]',
@@ -65,7 +73,7 @@ tour.register('rte_translator', {
     trigger: 'html:not(:has(#wrap p span)) .o_menu_systray a[data-action="translate"]',
 }, {
     content: "close modal",
-    trigger: '.modal-footer .btn-default',
+    trigger: '.modal-footer .btn-secondary',
 }, {
     content: "check if translation is activate",
     trigger: '[data-oe-translation-id]',
@@ -94,7 +102,7 @@ tour.register('rte_translator', {
     run: 'text test french placeholder',
 }, {
     content: "close modal",
-    trigger: 'button.o_save_button',
+    trigger: '.modal-footer .btn-primary',
     extra_trigger: '.modal input:propValue(test french placeholder)',
 }, {
     content: "save translation",
@@ -112,6 +120,11 @@ tour.register('rte_translator', {
     content: "check: placeholder translation",
     trigger: 'input[placeholder="test french placeholder"]',
     run: function () {}, // it's a check
+
+}, {
+    content : "click language dropdown",
+    trigger : '.js_language_selector .dropdown-toggle',
+
 }, {
     content: "return to english version",
     trigger: '.js_language_selector a[data-lang="en_US"]',
@@ -139,6 +152,11 @@ tour.register('rte_translator', {
     content: "save new change",
     trigger: 'button[data-action=save]',
     extra_trigger: '#wrap p u',
+
+    }, {
+    content : "click language dropdown",
+    trigger : '.js_language_selector .dropdown-toggle',
+
 }, {
     content: "return in french",
     trigger: 'html[lang="en-US"] .js_language_selector a[data-lang="fr_BE"]',
@@ -150,5 +168,25 @@ tour.register('rte_translator', {
 }, {
     content: "check bis: placeholder translation",
     trigger: 'input[placeholder="test french placeholder"]',
+}, {
+    content: "Open customize menu",
+    trigger: "#customize-menu > .dropdown-toggle",
+}, {
+    content: "Open HTML editor",
+    trigger: "[data-action='ace']",
+}, {
+    content: "Check that the editor is not showing translated content (1)",
+    trigger: '.ace_text-layer .ace_line:contains("an HTML")',
+    run: function (actions) {
+        var lineEscapedText = $(this.$anchor.text()).text();
+        if (lineEscapedText !== "&lt;b&gt;&lt;/b&gt; is an HTML&nbsp;tag &amp; is empty") {
+            console.error('The HTML editor should display the correct untranslated content');
+            $('body').addClass('rte_translator_error');
+        }
+    },
+}, {
+    content: "Check that the editor is not showing translated content (2)",
+    trigger: 'body:not(.rte_translator_error)',
+    run: function () {},
 }]);
 });

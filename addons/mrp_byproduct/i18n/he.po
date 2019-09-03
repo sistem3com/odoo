@@ -3,15 +3,17 @@
 # * mrp_byproduct
 # 
 # Translators:
-# Yihya Hugirat <hugirat@gmail.com>, 2017
 # ExcaliberX <excaliberx@gmail.com>, 2018
+# Yihya Hugirat <hugirat@gmail.com>, 2018
+# דודי מלכה <Dudimalka6@gmail.com>, 2019
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 09:00+0000\n"
-"PO-Revision-Date: 2017-10-24 09:00+0000\n"
-"Last-Translator: ExcaliberX <excaliberx@gmail.com>, 2018\n"
+"POT-Creation-Date: 2018-09-21 13:17+0000\n"
+"PO-Revision-Date: 2018-08-24 09:21+0000\n"
+"Last-Translator: דודי מלכה <Dudimalka6@gmail.com>, 2019\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,78 +24,78 @@ msgstr ""
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_bom
 msgid "Bill of Material"
-msgstr ""
+msgstr "חשבון חומרי הגלם"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_bom_id
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__bom_id
 msgid "BoM"
-msgstr ""
+msgstr "רשימת עלויות חומרי הגלם  "
 
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_subproduct
 msgid "Byproduct"
-msgstr ""
+msgstr "תוצר לוואי"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_bom_sub_products
-#: model:ir.ui.view,arch_db:mrp_byproduct.mrp_subproduct_view
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_bom__sub_products
+#: model_terms:ir.ui.view,arch_db:mrp_byproduct.mrp_subproduct_view
 msgid "Byproducts"
-msgstr ""
+msgstr "תוצרי לוואי"
 
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_change_production_qty
-msgid "Change Quantity of Products"
-msgstr ""
+msgid "Change Production Qty"
+msgstr "שינוי כמות הייצור"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_create_uid
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__create_uid
 msgid "Created by"
 msgstr "נוצר על ידי"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_create_date
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__create_date
 msgid "Created on"
 msgstr "נוצר ב-"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_display_name
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__display_name
 msgid "Display Name"
 msgstr "השם המוצג"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_id
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__id
 msgid "ID"
 msgstr "מזהה"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct___last_update
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct____last_update
 msgid "Last Modified on"
 msgstr "תאריך שינוי אחרון"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_write_uid
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__write_uid
 msgid "Last Updated by"
 msgstr "עודכן לאחרונה על ידי"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_write_date
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__write_date
 msgid "Last Updated on"
 msgstr "תאריך עדכון אחרון"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_operation_id
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__operation_id
 msgid "Produced at Operation"
-msgstr ""
+msgstr "מיוצר בפעולה"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_product_id
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__product_id
 msgid "Product"
 msgstr "פריט"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_product_qty
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__product_qty
 msgid "Product Qty"
-msgstr ""
+msgstr "כמות מוצר"
 
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_production
@@ -103,33 +105,33 @@ msgstr "ייצור"
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_mrp_product_produce
 msgid "Record Production"
-msgstr ""
+msgstr "תיעוד הייצור "
 
 #. module: mrp_byproduct
 #: model:ir.model,name:mrp_byproduct.model_stock_move
 msgid "Stock Move"
-msgstr ""
+msgstr "תנועת מלאי"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_stock_move_subproduct_id
+#: model:ir.model.fields,field_description:mrp_byproduct.field_stock_move__subproduct_id
 msgid "Subproduct"
-msgstr ""
+msgstr "תת-מוצר"
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,help:mrp_byproduct.field_stock_move_subproduct_id
+#: model:ir.model.fields,help:mrp_byproduct.field_stock_move__subproduct_id
 msgid "Subproduct line that generated the move in a manufacturing order"
-msgstr ""
+msgstr "קו תת המוצר יצר תנועה בסדר היצור "
 
 #. module: mrp_byproduct
 #: code:addons/mrp_byproduct/models/mrp_subproduct.py:32
 #, python-format
 msgid ""
-"The Product Unit of Measure you chose has a different category than in the "
-"product form."
-msgstr ""
+"The unit of measure you chose is in a different category than the product "
+"unit of measure."
+msgstr "יחידת המדידה שבחרת היא בקטגוריה שונה מזו של יחידת המידה של המוצר."
 
 #. module: mrp_byproduct
-#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct_product_uom_id
+#: model:ir.model.fields,field_description:mrp_byproduct.field_mrp_subproduct__product_uom_id
 msgid "Unit of Measure"
 msgstr "יחידת מידה"
 
@@ -138,3 +140,9 @@ msgstr "יחידת מידה"
 #, python-format
 msgid "Warning"
 msgstr "אזהרה"
+
+#. module: mrp_byproduct
+#: code:addons/mrp_byproduct/models/mrp_production.py:48
+#, python-format
+msgid "You cannot have %s  as the finished product and in the Byproducts"
+msgstr ""

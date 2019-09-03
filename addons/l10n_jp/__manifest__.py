@@ -5,7 +5,7 @@
 
 {
     'name': 'Japan - Accounting',
-    'version': '2.0',
+    'version': '2.1',
     'category': 'Localization',
     'description': """
 
@@ -37,6 +37,6 @@ need to use these at all under normal circumstances.
         'data/account_chart_template_data.xml',
         'data/account.fiscal.position.template.csv',
         'data/account.fiscal.position.tax.template.csv',
-        'data/account_chart_template_data.yml',
+        'data/account_chart_template_configure_data.xml',
     ],
 }

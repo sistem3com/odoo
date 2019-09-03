@@ -3,7 +3,7 @@
 
 {
     'name': 'Belgium - Payroll - Fleet',
-    'category': 'Localization',
+    'category': 'Human Resources',
     'depends': ['l10n_be_hr_payroll', 'fleet'],
     'description': """
     """,
@@ -11,6 +11,7 @@
         'views/fleet_views.xml',
         'views/res_config_settings_views.xml',
         'views/hr_contract_views.xml',
+        'security/security.xml',
     ],
     'auto_install': True,
 }

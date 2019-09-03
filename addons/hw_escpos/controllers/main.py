@@ -183,13 +183,14 @@ class EscposDriver(Thread):
             except NoStatusError as e:
                 print("Impossible to get the status of the printer %s" % e)
             except Exception as e:
-                self.set_status('error', e)
-                _logger.exception()
+                self.set_status('error')
+                _logger.exception(e)
             finally:
                 if error:
                     self.queue.put((timestamp, task, data))
                 if printer:
                     printer.close()
+                    printer = None
 
     def push_task(self,task, data = None):
         self.lockedstart()
@@ -212,17 +213,17 @@ class EscposDriver(Thread):
                     ips.append(conf.get('addr'))
         eprint.text('\n\n')
         eprint.set(align='center',type='b',height=2,width=2)
-        eprint.text('PosBox Status\n')
+        eprint.text('IoTBox Status\n')
         eprint.text('\n')
         eprint.set(align='center')
 
         if hosting_ap:
-            eprint.text('Wireless network:\nPosbox\n\n')
+            eprint.text('Wireless network:\nIoTBox\n\n')
         elif ssid:
             eprint.text('Wireless network:\n' + ssid + '\n\n')
 
         if len(ips) == 0:
-            eprint.text('ERROR: Could not connect to LAN\n\nPlease check that the PosBox is correc-\ntly connected with a network cable,\n that the LAN is setup with DHCP, and\nthat network addresses are available')
+            eprint.text('ERROR: Could not connect to LAN\n\nPlease check that the IoTBox is correc-\ntly connected with a network cable,\n that the LAN is setup with DHCP, and\nthat network addresses are available')
         elif len(ips) == 1:
             eprint.text('IP Address:\n'+ips[0]+'\n')
         else:

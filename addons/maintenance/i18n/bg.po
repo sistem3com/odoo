@@ -2,24 +2,12 @@
 # This file contains the translation of the following modules:
 # * maintenance
 # 
-# Translators:
-# Martin Trigaux, 2017
-# aleksandar ivanov, 2018
-# Albena Mincheva <albena_vicheva@abv.bg>, 2018
-# kirily <kiril@teracomp.eu>, 2018
-# Vassil Toumbev <vassy@mail.bg>, 2018
-# Todor Mladenov <tmladenov@dir.bg>, 2018
-# Anton Vassilev, 2018
-# Vladimir Dachev <v.dachev@dalkomotors.com>, 2018
-# Vladimir Petrov <vladimir.petrov@gmail.com>, 2018
-# Maria Boyadjieva <marabo2000@gmail.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-30 13:41+0000\n"
-"PO-Revision-Date: 2018-01-30 13:41+0000\n"
-"Last-Translator: Maria Boyadjieva <marabo2000@gmail.com>, 2018\n"
+"POT-Creation-Date: 2019-03-29 10:10+0000\n"
+"PO-Revision-Date: 2018-08-24 09:20+0000\n"
 "Language-Team: Bulgarian (https://www.transifex.com/odoo/teams/41243/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,478 +16,590 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
 msgid "<b>Category:</b>"
-msgstr "<b>Категория:</b>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "<b>Model Number:</b>"
-msgstr "<b>Модел номер:</b>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
 msgid "<b>Request to:</b>"
-msgstr "<b>Заявка към:</b>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "<b>Serial Number:</b>"
-msgstr "<b>Сериен номер:</b>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
-msgid "<span class=\"label label-warning pull-right\">Canceled</span>"
-msgstr "<span class=\"label label-warning pull-right\">Отказан</span>"
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+msgid "<i class=\"fa fa-comments\" role=\"img\" aria-label=\"Unread Messages\"/>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "<span class=\"badge badge-warning float-right\">Canceled</span>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+msgid "<span class=\"ml8\">hours</span>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "<span>Reporting</span>"
-msgstr "<span>Отчети</span>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "<span>View</span>"
-msgstr "<span>Прегледай</span>"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
 msgid "<strong>Equipments:</strong>"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.view_maintenance_equipment_category_kanban
 msgid "<strong>Maintenance:</strong>"
-msgstr "Поддръжка:"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_defaults
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_defaults
 msgid ""
 "A Python dictionary that will be evaluated to provide default values when "
 "creating new records for this alias."
 msgstr ""
-"Речник Python, който ще бъде оценен, за да предоставя стойности по "
-"подразбиране при създаването на нови записи за този alias."
 
 #. module: maintenance
 #: model:maintenance.equipment,name:maintenance.equipment_computer3
 #: model:maintenance.equipment,name:maintenance.equipment_computer5
 msgid "Acer Laptop"
-msgstr "Лаптоп Acer"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_active
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_needaction
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_needaction
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__active
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__active
 msgid "Active"
-msgstr "Активен"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_state
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.mail_activity_type_action_config_maintenance
+#: model:ir.ui.menu,name:maintenance.maintenance_menu_config_activity_type
+msgid "Activity Types"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
+msgid "Add a new equipment"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_category_action
+msgid "Add a new equipment category"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_cal
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_from_equipment
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_link
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_todo_request_action_from_dashboard
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_request_action_reports
+msgid "Add a new maintenance request"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_stage_action
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_dashboard_action
+msgid "Add a new stage in the maintenance request"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_team_action_settings
+msgid "Add a team in the maintenance request"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_id
 msgid "Alias"
-msgstr "Синоним"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_contact
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_contact
 msgid "Alias Contact Security"
-msgstr "Защита на контакт-синоним"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_name
 msgid "Alias Name"
-msgstr "Псевдоним - име"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_domain
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_domain
 msgid "Alias domain"
-msgstr "Псевдоним - домейн"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_model_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_model_id
 msgid "Aliased Model"
-msgstr "Псевдонимен модел"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "All"
-msgstr "Всички"
+msgstr ""
 
 #. module: maintenance
 #: sql_constraint:maintenance.equipment:0
 msgid "Another asset already exists with this serial number!"
-msgstr "Съществува друг актив с този сериоен номер"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_archive
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__archive
 msgid "Archive"
-msgstr "Архив"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
 msgid "Archived"
-msgstr "Архивирани"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model,name:maintenance.model_maintenance_equipment_category
-msgid "Asset Category"
-msgstr "Категории активи"
-
-#. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
 msgid "Assign To User"
-msgstr "Присвояване на потребител"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Assigned"
-msgstr "Присвоено"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_assign_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__assign_date
 msgid "Assigned Date"
-msgstr "Дата на присвояване"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_attachment_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_attachment_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Available"
-msgstr "На разположение"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 #: selection:maintenance.request,kanban_state:0
 msgid "Blocked"
-msgstr "Блокиран"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Cancel"
-msgstr "Откажи"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_category_id
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__category_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Category"
-msgstr "Категория"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_name
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__name
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
 msgid "Category Name"
-msgstr "Име на категория"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
-msgid "Click to add a new Engine."
-msgstr "Кликнете, за да добавите нова машина"
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_category_action
-msgid "Click to add a new equipment category."
-msgstr "Кликнете, за да добавите нова категория оборудване."
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_action
-msgid "Click to add a new equipment."
-msgstr "Кликнете, за да добавите ново оборудване."
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_request_action
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_request_action_link
-msgid "Click to add a new maintenance request."
-msgstr "Кликнете, за да добавите нова заявка за поддръжка."
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_stage_action
-#: model:ir.actions.act_window,help:maintenance.maintenance_dashboard_action
-msgid "Click to add a stage in the maintenance request."
-msgstr "Кликнете, за да добавите етап в заявката за поддръжка."
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.maintenance_team_action_settings
-msgid "Click to add a team in the maintenance request."
-msgstr "Кликнете, за да добавите екип в заявката за поддръжка."
-
-#. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_close_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__close_date
 msgid "Close Date"
-msgstr "Дата на затваряне"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_color
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_color
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_color
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__color
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__color
 msgid "Color Index"
-msgstr "Индекс на Цветовете."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_note
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__note
 msgid "Comments"
-msgstr "Коментари"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__company_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__company_id
+msgid "Company"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.equipment.category,name:maintenance.equipment_computer
 msgid "Computers"
-msgstr "Компютри"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_configuration
 msgid "Configuration"
-msgstr "Настройка"
+msgstr ""
 
 #. module: maintenance
 #: selection:maintenance.request,maintenance_type:0
 msgid "Corrective"
-msgstr "Поправка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_cost
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__cost
 msgid "Cost"
-msgstr "Стойност"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "Created By"
-msgstr "Създаден от"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_create_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_create_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_create_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_owner_user_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_create_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__create_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__create_uid
 msgid "Created by"
-msgstr "Създадено от"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_create_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_create_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_create_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_create_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__owner_user_id
+msgid "Created by User"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__create_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__create_date
 msgid "Created on"
-msgstr "Създадено на"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_open_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_open_count
 msgid "Current Maintenance"
-msgstr "Текуща поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_dashboard
 msgid "Dashboard"
-msgstr "Табло"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_next_action_date
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__effective_date
+msgid ""
+"Date at which the equipment became effective. This date will be used to "
+"compute the Mean Time Between Failure."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__next_action_date
 msgid "Date of the next preventive maintenance"
-msgstr "Дата на следващата превантивна поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_request_request_date
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__request_date
 msgid "Date requested for the maintenance to happen"
-msgstr "Дата, пожелана за извършване на поддръжката"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_request_schedule_date
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__schedule_date
 msgid ""
 "Date the maintenance team plans the maintenance.  It should not differ much "
 "from the Request Date. "
 msgstr ""
-"Дата на която екипа за поддръжка планира посещението. Не трябва да се "
-"различава много от заявената дата."
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_request_close_date
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__close_date
 msgid "Date the maintenance was finished. "
-msgstr "Дата на завършване на поддръжката."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_period
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__period
 msgid "Days between each preventive maintenance"
-msgstr "Дни между всяка превантивна поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_defaults
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_defaults
 msgid "Default Values"
-msgstr "Стойности по подразбиране"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "Delete"
-msgstr "Изтрий"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_description
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__description
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Description"
-msgstr "Описание"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_display_name
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_display_name
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_display_name
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_display_name
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__display_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__display_name
 msgid "Display Name"
-msgstr "Име за показване"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Done"
-msgstr "Готов"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_duration
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "Dropdown menu"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__duration
 msgid "Duration"
-msgstr "Продължителност"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_request_duration
-msgid "Duration in minutes and seconds."
-msgstr "Продължителност в минути и секунди"
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__duration
+msgid "Duration in hours and minutes."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "Edit..."
-msgstr "Редакция..."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__effective_date
+msgid "Effective Date"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
 msgid "Email Alias"
-msgstr "Псевдоним за имейл"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_id
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_id
 msgid ""
 "Email alias for this equipment category. New emails will automatically "
-"create new maintenance request for this equipment category."
+"create a new equipment under this category."
 msgstr ""
-"Псевдоним на имейл за тази категория на оборудването. Новите имейли "
-"автоматично ще създадат нова заявка за поддръжка за тази категория на "
-"оборудването."
 
 #. module: maintenance
-#: model:ir.model,name:maintenance.model_maintenance_equipment
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_equipment_count
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_equipment_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_equipment_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__equipment_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__equipment_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__equipment_ids
 msgid "Equipment"
-msgstr "Екипировка"
+msgstr ""
 
 #. module: maintenance
 #: model:mail.message.subtype,description:maintenance.mt_mat_assign
 #: model:mail.message.subtype,name:maintenance.mt_cat_mat_assign
 #: model:mail.message.subtype,name:maintenance.mt_mat_assign
 msgid "Equipment Assigned"
-msgstr "Присвоено оборудване "
+msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_category_action
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_cat
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
 msgid "Equipment Categories"
-msgstr "Категории оборудване"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_id_3470
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__category_id
 msgid "Equipment Category"
-msgstr "Категория на оборудване"
+msgstr ""
 
 #. module: maintenance
 #: model:res.groups,name:maintenance.group_equipment_manager
 msgid "Equipment Manager"
-msgstr "Мениджър на оборудване"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_name
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__name
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Equipment Name"
-msgstr "Име на оборудването"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_action
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_action_from_category_form
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_equipment_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__equipment_ids
 #: model:ir.ui.menu,name:maintenance.menu_equipment_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Equipments"
-msgstr "Оборудвания"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_fold
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_fold
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__fold
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__fold
 msgid "Folded in Maintenance Pipe"
-msgstr "Сгънато в тръбата за поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_request_action
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_request_action_link
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_cal
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_from_equipment
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_request_action_link
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_todo_request_action_from_dashboard
+#: model_terms:ir.actions.act_window,help:maintenance.maintenance_request_action_reports
 msgid ""
 "Follow the process of the request and communicate with the collaborator."
-msgstr "Следвайте процеса на заявката и общувайте със сътрудника."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_follower_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_follower_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_channel_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_channel_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_partner_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_partner_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Future Activities"
-msgstr "Бъдещи дейности"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Group by..."
-msgstr "Групирай по..."
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.equipment,name:maintenance.equipment_printer1
 msgid "HP Inkjet printer"
-msgstr "HP InkJet принтер"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.equipment,name:maintenance.equipment_computer11
 #: model:maintenance.equipment,name:maintenance.equipment_computer9
 msgid "HP Laptop"
-msgstr "HP лаптоп"
+msgstr ""
 
 #. module: maintenance
 #: selection:maintenance.request,priority:0
 msgid "High"
-msgstr "Висок"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_parent_thread_id
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_parent_thread_id
 msgid ""
 "ID of the parent record holding the alias (example: project holding the task"
 " creation alias)"
 msgstr ""
-"Идентификатор на родителския запис, съдържащ псевдонима (пример: проект, "
-"който държи псевдонима за създаване на задачи)"
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_unread
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_unread
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_needaction
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_needaction
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_has_error
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_has_error
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 #: selection:maintenance.request,kanban_state:0
 #: model:maintenance.stage,name:maintenance.stage_1
 msgid "In Progress"
-msgstr "В процес"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.team,name:maintenance.equipment_team_maintenance
@@ -507,114 +607,145 @@ msgid "Internal Maintenance"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Internal Note ......."
-msgstr "Вътрешна бележка ..."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_kanban_state
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_is_follower
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_is_follower
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__kanban_state
 msgid "Kanban State"
-msgstr "Състояние Канбан"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment___last_update
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category___last_update
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request___last_update
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage___last_update
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team___last_update
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment____last_update
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category____last_update
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request____last_update
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage____last_update
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team____last_update
 msgid "Last Modified on"
-msgstr "Последно променено на"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_write_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_write_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_write_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_write_uid
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__write_uid
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__write_uid
 msgid "Last Updated by"
-msgstr "Последно обновено от"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_write_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_write_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_write_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_write_date
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__write_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__write_date
 msgid "Last Updated on"
-msgstr "Последно обновено на"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Late Activities"
-msgstr "Последни дейности"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_location
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__location
 msgid "Location"
-msgstr "Локация"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_reports_losses
 msgid "Losses Analysis"
-msgstr "Анализ на загубите"
+msgstr ""
 
 #. module: maintenance
 #: selection:maintenance.request,priority:0
 msgid "Low"
-msgstr "Нисък"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_maintenance_count
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_maintenance_ids
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_count
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_main_attachment_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_main_attachment_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__maintenance_ids
 #: model:ir.ui.menu,name:maintenance.menu_m_request
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_title
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Maintenance"
-msgstr "Поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_request_calendar
 msgid "Maintenance Calendar"
-msgstr "Календар за подръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_duration
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__maintenance_count
+msgid "Maintenance Count"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_duration
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Maintenance Duration"
-msgstr "Продължителност на поддръжката"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_maintenance_duration
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__maintenance_duration
 msgid "Maintenance Duration in hours."
-msgstr "Продължителност на поддръжката в часове"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model:ir.model,name:maintenance.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_equipment_category
+msgid "Maintenance Equipment Category"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model,name:maintenance.model_maintenance_request
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model:mail.activity.type,name:maintenance.mail_act_maintenance_request
 msgid "Maintenance Request"
-msgstr "Искане за поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:mail.message.subtype,name:maintenance.mt_cat_req_created
 msgid "Maintenance Request Created"
-msgstr "Създадено искане за поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_stage_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_stage_view_tree
 msgid "Maintenance Request Stage"
-msgstr "Етап на заявката за поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_stage_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_stage_view_search
 msgid "Maintenance Request Stages"
-msgstr "Етапи на заявките за поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:mail.message.subtype,description:maintenance.mt_req_created
 msgid "Maintenance Request created"
-msgstr "Създадена заявка за поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_request_action
@@ -623,48 +754,61 @@ msgstr "Създадена заявка за поддръжка"
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_request_action_link
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_todo_request_action_from_dashboard
 #: model:ir.actions.act_window,name:maintenance.maintenance_request_action_reports
-#: model:ir.model,name:maintenance.model_maintenance_request
 #: model:ir.ui.menu,name:maintenance.maintenance_request_reporting
 #: model:ir.ui.menu,name:maintenance.menu_m_request_form
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Maintenance Requests"
-msgstr "Заявка за поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.model,name:maintenance.model_maintenance_stage
 msgid "Maintenance Stage"
-msgstr "Етап на поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_stage_configuration
 msgid "Maintenance Stages"
-msgstr "Етапи на поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_maintenance_team_id
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_view_tree
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__maintenance_team_id
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_tree
 msgid "Maintenance Team"
-msgstr "Екип за поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.maintenance_dashboard_action
 #: model:ir.model,name:maintenance.model_maintenance_team
 #: model:ir.ui.menu,name:maintenance.menu_maintenance_teams
 msgid "Maintenance Teams"
-msgstr "Екипи за поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_maintenance_type
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__maintenance_type
 msgid "Maintenance Type"
-msgstr "Вид поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.server,name:maintenance.maintenance_requests_cron_ir_actions_server
 #: model:ir.cron,cron_name:maintenance.maintenance_requests_cron
 #: model:ir.cron,name:maintenance.maintenance_requests_cron
 msgid "Maintenance: generate preventive maintenance requests"
-msgstr "Поддръжка: генериране на искане за профилактична поддръжка"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_has_error
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_has_error
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_ids
+msgid "Messages"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.team,name:maintenance.equipment_team_metrology
@@ -672,268 +816,319 @@ msgid "Metrology"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_model
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__model
 msgid "Model"
-msgstr "Модел"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.equipment.category,name:maintenance.equipment_monitor
 msgid "Monitors"
-msgstr "Монитор"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "My Activities"
-msgstr "Моите дейности"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "My Equipments"
-msgstr "Моите съоръжения"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "My Requests"
-msgstr "Моите заявки"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_name
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_name
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__name
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Name"
-msgstr "Име"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.stage,name:maintenance.stage_0
 msgid "New Request"
-msgstr "Нова заявка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_date_deadline
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_summary
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_type_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Next Preventive Maintenance"
-msgstr "Следваща профилактична поддръжка"
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.maintenance_request_action_reports
-msgid "No maintenance request."
-msgstr "Няма заявка за поддръжка."
+msgstr ""
 
 #. module: maintenance
 #: selection:maintenance.request,priority:0
 msgid "Normal"
-msgstr "Нормален"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_note
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__note
 msgid "Note"
-msgstr "Бележка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_todo_request_count
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_needaction_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_needaction_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count
 msgid "Number of Requests"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_todo_request_count_block
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_block
 msgid "Number of Requests Blocked"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_todo_request_count_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_date
 msgid "Number of Requests Scheduled"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_todo_request_count_unscheduled
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_unscheduled
 msgid "Number of Requests Unscheduled"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_todo_request_count_high_priority
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_count_high_priority
 msgid "Number of Requests in High Priority"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_force_thread_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_has_error_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_has_error_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_has_error_counter
+msgid "Number of error"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_needaction_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_needaction_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_has_error_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_has_error_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__message_unread_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__message_unread_counter
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_force_thread_id
 msgid ""
 "Optional ID of a thread (record) to which all incoming messages will be "
 "attached, even if they did not reply to it. If set, this will disable the "
 "creation of new records completely."
 msgstr ""
-"Недадължителна идентификация на поредица (запис), към която ще се прикачват "
-"всички постъпващи съобщения, дори и да не ѝ отговарят. Ако е настроено, това"
-" напълно ще прекрати създаването на нови записи."
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.menu_m_reports_oee
 msgid "Overall Equipment Effectiveness (OEE)"
-msgstr "Цялостна ефективност на оборудването (OEE)"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
-msgid "Overdue Activities"
-msgstr "Просрочени дейности"
+#: selection:maintenance.equipment,activity_state:0
+#: selection:maintenance.request,activity_state:0
+msgid "Overdue"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_user_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_owner_user_id
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_technician_user_id
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__owner_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_user_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_tree
 msgid "Owner"
-msgstr "Собственик"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_parent_model_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_parent_model_id
 msgid "Parent Model"
-msgstr "Основен модел"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_parent_thread_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_parent_thread_id
 msgid "Parent Record Thread ID"
-msgstr "Основна поредица записи - идентификационен номер"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_parent_model_id
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_parent_model_id
 msgid ""
 "Parent model holding the alias. The model holding the alias reference is not"
 " necessarily the model given by alias_model_id (example: project "
 "(parent_model) and task (model))"
 msgstr ""
-"Основен модел, съдържащ the alias. Моделът, съдържаш референцията за the "
-"alias не е непременно моделът, зададен от alias_model_id (например: проект "
-"(parent_model) и задача (модел))"
 
 #. module: maintenance
 #: model:maintenance.equipment.category,name:maintenance.equipment_phone
 msgid "Phones"
-msgstr "Телефони"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_contact
+#: selection:maintenance.equipment,activity_state:0
+#: selection:maintenance.request,activity_state:0
+msgid "Planned"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_contact
 msgid ""
 "Policy to post a message on the document using the mailgateway.\n"
 "- everyone: everyone can post\n"
 "- partners: only authenticated partners\n"
 "- followers: only followers of the related document or members of following channels\n"
 msgstr ""
-"Политика за публикуване на съобщение в документа чрез пощенската кутия.\n"
-"- всеки: всеки може да публикува\n"
-"- контрагенти: само удостоверени контрагенти\n"
-"- последователи: само последователи на свързан документ или членове на следващите канали\n"
 
 #. module: maintenance
 #: selection:maintenance.request,maintenance_type:0
 msgid "Preventive"
-msgstr "Превантивен"
+msgstr ""
 
 #. module: maintenance
-#: code:addons/maintenance/models/maintenance.py:227
+#: code:addons/maintenance/models/maintenance.py:231
 #, python-format
 msgid "Preventive Maintenance - %s"
-msgstr "Превантивна поддръжка - %s"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Preventive Maintenance Frequency"
-msgstr "Честота на превантивна поддръжка"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.equipment.category,name:maintenance.equipment_printer
 msgid "Printers"
-msgstr "Принтери"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_priority
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__priority
 msgid "Priority"
-msgstr "Важност"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Product Information"
-msgstr "Продуктова информация"
+msgstr ""
 
 #. module: maintenance
 #: selection:maintenance.request,kanban_state:0
 msgid "Ready for next stage"
-msgstr "Готови за следващ етап"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "Record Colour"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_alias_force_thread_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__alias_force_thread_id
 msgid "Record Thread ID"
-msgstr "Идентификационен номер на поредица записи"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Reopen Request"
-msgstr "Отворете заявката отново"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.stage,name:maintenance.stage_3
 msgid "Repaired"
-msgstr "Поправено"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.ui.menu,name:maintenance.maintenance_reporting
 #: model:ir.ui.menu,name:maintenance.menu_m_reports
 msgid "Reporting"
-msgstr "Отчитане"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_request_ids
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__request_ids
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "Request"
-msgstr "Заявка"
+msgstr ""
 
 #. module: maintenance
 #: model:mail.message.subtype,name:maintenance.mt_req_created
 msgid "Request Created"
-msgstr "Създадена заявка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_request_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__request_date
 msgid "Request Date"
-msgstr "Дата на заявка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_done
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__done
 msgid "Request Done"
-msgstr "Извършена заявка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: code:addons/maintenance/models/maintenance.py:375
+#, python-format
+msgid "Request planned for <a href=\"#\" data-oe-model=\"%s\" data-oe-id=\"%s\">%s</a>"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Requested By"
-msgstr "Заявено от"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
 msgid "Requested by :"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_todo_request_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__todo_request_ids
 msgid "Requests"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category_technician_user_id
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__technician_user_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
 msgid "Responsible"
-msgstr "Отговорник"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
-msgid "Responsible :"
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__activity_user_id
+msgid "Responsible User"
 msgstr ""
 
 #. module: maintenance
@@ -941,90 +1136,97 @@ msgstr ""
 #: model:maintenance.equipment,name:maintenance.equipment_monitor4
 #: model:maintenance.equipment,name:maintenance.equipment_monitor6
 msgid "Samsung Monitor 15\""
-msgstr "Монитор Samsung 15\""
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Scheduled"
-msgstr "Планирано"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_schedule_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__schedule_date
 msgid "Scheduled Date"
-msgstr "Планирана дата"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.stage,name:maintenance.stage_4
 msgid "Scrap"
-msgstr "Брак"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_scrap_date
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__scrap_date
 msgid "Scrap Date"
-msgstr "Дата на бракуване"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_category_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_search
 msgid "Search"
-msgstr "Търсене"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage_sequence
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_stage__sequence
 msgid "Sequence"
-msgstr "Последователност"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_serial_no
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__serial_no
 msgid "Serial Number"
-msgstr "Сериен номер"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_request_archive
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__archive
 msgid ""
 "Set archive to true to hide the maintenance request without deleting it."
 msgstr ""
-"Настройте архива на 'Правилно', за да скриете заявката за поддръжка, без да "
-"я изтривате."
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Settings"
-msgstr "Настройки"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Show all records which has next action date is before today"
 msgstr ""
-"Показване на всички записи, на които следващата дата на действие е преди "
-"днес"
 
 #. module: maintenance
 #: model:maintenance.equipment.category,name:maintenance.equipment_software
 msgid "Software"
-msgstr "Софтуер"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_stage_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__stage_id
 msgid "Stage"
-msgstr "Стадий"
+msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.hr_equipment_stage_action
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "Stages"
-msgstr "Стадии"
+msgstr ""
 
 #. module: maintenance
 #: model:mail.message.subtype,name:maintenance.mt_req_status
 msgid "Status Changed"
-msgstr "Променено състояние"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__activity_state
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
 
 #. module: maintenance
 #: model:mail.message.subtype,description:maintenance.mt_req_status
 msgid "Status changed"
-msgstr "Етапът променен"
+msgstr ""
 
 #. module: maintenance
 #: model:maintenance.team,name:maintenance.equipment_team_subcontractor
@@ -1032,215 +1234,204 @@ msgid "Subcontractor"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_name
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__name
 msgid "Subjects"
-msgstr "Теми"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_request_maintenance_team_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__maintenance_team_id
 msgid "Team"
-msgstr "Екип"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_team_member_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_team__member_ids
 msgid "Team Members"
-msgstr "Членове на отбора"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_view_form
 msgid "Team Name"
 msgstr ""
 
 #. module: maintenance
 #: model:ir.actions.act_window,name:maintenance.maintenance_team_action_settings
 msgid "Teams"
-msgstr "Екипи"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_technician_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__technician_user_id
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__user_id
 msgid "Technician"
-msgstr "Техник"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Technicians"
-msgstr "Техници"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_model_id
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_model_id
 msgid ""
 "The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"Моделът (Odoo вид документ), към който се съотнася този псевдоним. Всеки "
-"един входящ имейл, който не отговаря на съществуващ запис, ще предизвика "
-"създаването на нов запис на въпросния модел (напр. проектна задача)"
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_name
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
 "<jobs@example.odoo.com>"
 msgstr ""
-"Името на имейла-псевдоним, напр. 'позиции', в случай че желаете да "
-"прихващате имейли <jobs@example.odoo.com>"
 
 #. module: maintenance
-#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category_alias_user_id
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_user_id
 msgid ""
 "The owner of records created upon receiving emails on this alias. If this "
 "field is not set the system will attempt to find the right owner based on "
 "the sender (From) address, or will use the Administrator account if no "
 "system user is found for that address."
 msgstr ""
-"Собственикът на записите, създадени според получаването на имейли на този "
-"псевдоним. Ако това поле не е настроено, системата ще се опита да открие "
-"правилния собственик въз основа адреса на подателя (От) или ще използва "
-"профила на администратора, в случай че на този адрес не е открит никакъв "
-"системен потребител."
 
 #. module: maintenance
 #: model:res.groups,comment:maintenance.group_equipment_manager
 msgid "The user will be able to manage equipments."
-msgstr "Потребителят ще може да управлява оборудването."
-
-#. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_action
-msgid ""
-"This application helps you to track equipments used by employees.\n"
-"                Create some laptop, printer or phone and link each equipment to\n"
-"                an employee or department. You will manage allocations, issues\n"
-"                and maintenance of equipment."
 msgstr ""
 
 #. module: maintenance
-#: model:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
-msgid ""
-"This application helps you to track equipments used by employees.\n"
-"                Create some laptop, printer or phone and link each equipment to an employee or department.\n"
-"                You will manage allocations, issues and maintenance of equipment."
-msgstr ""
-
-#. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "To Do"
-msgstr "Да се направи"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "To do"
-msgstr "За извършване"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: selection:maintenance.equipment,activity_state:0
+#: selection:maintenance.request,activity_state:0
+msgid "Today"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Today Activities"
-msgstr "Днешни дейности"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Top Priorities"
-msgstr "Най-важни приоритети"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
-msgid "Unassigned"
-msgstr "Незаето"
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action
+#: model_terms:ir.actions.act_window,help:maintenance.hr_equipment_action_from_category_form
+msgid ""
+"Track equipments and link it to an employee or department.\n"
+"                You will be able to manage allocations, issues and maintenance of your equipment."
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Under Maintenance"
-msgstr "Под поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_unread
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_unread
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_unread
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_kanban
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Unread Messages"
-msgstr "Непрочетени съобщения"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__message_unread_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__message_unread_counter
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: maintenance
+#: model_terms:ir.ui.view,arch_db:maintenance.maintenance_team_kanban
 msgid "Unscheduled"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "Unscheduled Maintenance"
-msgstr "Паддръжка, която не е насрочена"
-
-#. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
-msgid "Upcoming Activities (7 days)"
 msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
-msgid "Upcoming Activities (All)"
-msgstr ""
-
-#. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "Used in location"
-msgstr "Използва се на място"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_partner_id
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_id
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_search
 msgid "Vendor"
-msgstr "Доставчик"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_partner_ref
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_ref
 msgid "Vendor Reference"
-msgstr "Справка за доставчик"
+msgstr ""
 
 #. module: maintenance
 #: selection:maintenance.request,priority:0
 msgid "Very Low"
-msgstr "Много ниско"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_warranty
-msgid "Warranty"
-msgstr "Гаранция"
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__warranty_date
+msgid "Warranty Expiration Date"
+msgstr ""
 
 #. module: maintenance
-#: code:addons/maintenance/models/maintenance.py:75
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__website_message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment_category__website_message_ids
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: maintenance
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment__website_message_ids
+#: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__website_message_ids
+#: model:ir.model.fields,help:maintenance.field_maintenance_request__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: maintenance
+#: code:addons/maintenance/models/maintenance.py:77
 #, python-format
 msgid ""
 "You cannot delete an equipment category containing equipments or maintenance"
 " requests."
 msgstr ""
-"Не можете да изтриете категория на оборудване, съдържаща оборудване или "
-"заявки за поддръжка."
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "days"
-msgstr "дни"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
-msgid "for"
-msgstr "за"
-
-#. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_form
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
 msgid "hours"
-msgstr "часове"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_graph
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_pivot
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_tree
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_graph
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_pivot
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_tree
 msgid "maintenance Request"
-msgstr "Заявка за поддръжка"
+msgstr ""
 
 #. module: maintenance
-#: model:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_request_view_search
 msgid "maintenance Request Search"
-msgstr "Търсене на заявки за поддръжка"
+msgstr ""

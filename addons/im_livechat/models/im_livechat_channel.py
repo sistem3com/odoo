@@ -30,7 +30,7 @@ class ImLivechatChannel(models.Model):
         help="Default text displayed on the Livechat Support Button")
     default_message = fields.Char('Welcome Message', default='How may I help you?',
         help="This is an automated 'welcome' message that your visitor will see when they initiate a new conversation.")
-    input_placeholder = fields.Char('Chat Input Placeholder')
+    input_placeholder = fields.Char('Chat Input Placeholder', help='Text that prompts the user to initiate the chat.')
 
     # computed fields
     web_page = fields.Char('Web Page', compute='_compute_web_page_link', store=False, readonly=True,
@@ -177,6 +177,7 @@ class ImLivechatChannel(models.Model):
             'public': 'private',
             'email_send': False,
         })
+        mail_channel._broadcast([operator_partner_id])
         return mail_channel.sudo().with_context(im_livechat_operator_partner_id=operator_partner_id).channel_info()[0]
 
     @api.model
@@ -208,7 +209,7 @@ class ImLivechatChannelRule(models.Model):
     """
 
     _name = 'im_livechat.channel.rule'
-    _description = 'Channel Rules'
+    _description = 'Livechat Channel Rules'
     _order = 'sequence asc'
 
 

@@ -2,13 +2,13 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 import functools
-import unittest
 
+from odoo.tests.common import BaseCase
 from odoo.tools import frozendict, pycompat
 from odoo.tools.func import compose
 
 
-class TestCompose(unittest.TestCase):
+class TestCompose(BaseCase):
     def test_basic(self):
         str_add = compose(str, lambda a, b: a + b)
         self.assertEqual(str_add(1, 2), "3")
@@ -23,7 +23,7 @@ class TestCompose(unittest.TestCase):
         self.assertEqual(mul(5, 42), u"210")
 
 
-class TestFrozendict(unittest.TestCase):
+class TestFrozendict(BaseCase):
     def test_frozendict_immutable(self):
         """ Ensure that a frozendict is immutable. """
         vals = {'name': 'Joe', 'age': 42}

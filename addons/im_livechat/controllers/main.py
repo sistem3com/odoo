@@ -5,7 +5,7 @@ import base64
 
 from odoo import http, _
 from odoo.http import request
-from odoo.addons.base.ir.ir_qweb import AssetsBundle
+from odoo.addons.base.models.assetsbundle import AssetsBundle
 from odoo.addons.web.controllers.main import binary_content
 
 
@@ -80,7 +80,6 @@ class LivechatController(http.Controller):
     @http.route('/im_livechat/feedback', type='json', auth='public')
     def feedback(self, uuid, rate, reason=None, **kwargs):
         Channel = request.env['mail.channel']
-        Rating = request.env['rating.rating']
         channel = Channel.sudo().search([('uuid', '=', uuid)], limit=1)
         if channel:
             # limit the creation : only ONE rating per session
@@ -101,7 +100,11 @@ class LivechatController(http.Controller):
                 # if logged in user, set its partner on rating
                 values['partner_id'] = request.env.user.partner_id.id if request.session.uid else False
                 # create the rating
-                rating = Rating.sudo().create(values)
+
+                channel.write({
+                    'rating_ids': [(0, False, values)]
+                })
+                rating = channel.rating_ids[0]
             else:
                 rating = channel.rating_ids[0]
                 rating.write(values)
@@ -115,3 +118,13 @@ class LivechatController(http.Controller):
         if channel:
             channel._send_history_message(pid, page_history)
         return True
+
+    @http.route('/im_livechat/notify_typing', type='json', auth='public')
+    def notify_typing(self, uuid, is_typing):
+        """ Broadcast the typing notification of the website user to other channel members
+            :param uuid: (string) the UUID of the livechat channel
+            :param is_typing: (boolean) tells whether the website user is typing or not.
+        """
+        Channel = request.env['mail.channel']
+        channel = Channel.sudo().search([('uuid', '=', uuid)], limit=1)
+        channel.notify_typing(is_typing=is_typing, is_website_user=True)

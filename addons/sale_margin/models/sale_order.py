@@ -17,9 +17,9 @@ class SaleOrderLine(models.Model):
         purchase_price = product_id.standard_price
         if product_uom_id != product_id.uom_id:
             purchase_price = product_id.uom_id._compute_price(purchase_price, product_uom_id)
-        ctx = self.env.context.copy()
-        ctx['date'] = order_id.date_order
-        price = frm_cur.with_context(ctx).compute(purchase_price, to_cur, round=False)
+        price = frm_cur._convert(
+            purchase_price, to_cur, order_id.company_id or self.env.user.company_id,
+            order_id.date_order or fields.Date.today(), round=False)
         return price
 
     @api.model
@@ -29,9 +29,10 @@ class SaleOrderLine(models.Model):
         purchase_price = product.standard_price
         if product_uom != product.uom_id:
             purchase_price = product.uom_id._compute_price(purchase_price, product_uom)
-        ctx = self.env.context.copy()
-        ctx['date'] = date
-        price = frm_cur.with_context(ctx).compute(purchase_price, to_cur, round=False)
+        price = frm_cur._convert(
+            purchase_price, to_cur,
+            self.order_id.company_id or self.env.user.company_id,
+            date or fields.Date.today(), round=False)
         return {'purchase_price': price}
 
     @api.onchange('product_id', 'product_uom')
@@ -46,10 +47,10 @@ class SaleOrderLine(models.Model):
 
         # Calculation of the margin for programmatic creation of a SO line. It is therefore not
         # necessary to call product_id_change_margin manually
-        if 'purchase_price' not in vals:
+        if 'purchase_price' not in vals and ('display_type' not in vals or not vals['display_type']):
             order_id = self.env['sale.order'].browse(vals['order_id'])
             product_id = self.env['product.product'].browse(vals['product_id'])
-            product_uom_id = self.env['product.uom'].browse(vals['product_uom'])
+            product_uom_id = self.env['uom.uom'].browse(vals['product_uom'])
 
             vals['purchase_price'] = self._compute_margin(order_id, product_id, product_uom_id)
 
@@ -60,10 +61,6 @@ class SaleOrderLine(models.Model):
         for line in self:
             currency = line.order_id.pricelist_id.currency_id
             price = line.purchase_price
-            if not price:
-                from_cur = line.env.user.company_id.currency_id.with_context(date=line.order_id.date_order)
-                price = from_cur.compute(line.product_id.standard_price, currency, round=False)
- 
             line.margin = currency.round(line.price_subtotal - (price * line.product_uom_qty))
 
 

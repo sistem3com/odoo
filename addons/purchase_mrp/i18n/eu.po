@@ -2,16 +2,12 @@
 # This file contains the translation of the following modules:
 # * purchase_mrp
 # 
-# Translators:
-# oihane <oihanecruce@gmail.com>, 2017
-# Naomi Hidalgo <naomihid96@gmail.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-30 13:12+0000\n"
-"PO-Revision-Date: 2017-11-30 13:12+0000\n"
-"Last-Translator: Naomi Hidalgo <naomihid96@gmail.com>, 2018\n"
+"POT-Creation-Date: 2018-09-18 09:49+0000\n"
+"PO-Revision-Date: 2018-08-24 09:24+0000\n"
 "Language-Team: Basque (https://www.transifex.com/odoo/teams/41243/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +16,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: purchase_mrp
+#: model:ir.model,name:purchase_mrp.model_mrp_production
+msgid "Production"
+msgstr ""
+
+#. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Erosketa eskaera lerroa"
+msgstr ""
 
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_stock_move
 msgid "Stock Move"
-msgstr "Izakinen mugimendua"
+msgstr ""

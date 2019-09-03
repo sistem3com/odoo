@@ -27,6 +27,8 @@ class TestFloatPrecision(TransactionCase):
         try_round(0.0049,'0.00')   # 0.0049 is closer to 0 than to 0.01, so should round down
         try_round(0.005,'0.01')   # the rule is to round half away from zero
         try_round(-0.005,'-0.01') # the rule is to round half away from zero
+        try_round(6.6 * 0.175, '1.16') # 6.6 * 0.175 is rounded to 1.15 with epsilon = 53
+        try_round(-6.6 * 0.175, '-1.16')
 
         def try_zero(amount, expected):
             self.assertEqual(currency.is_zero(amount), expected,
@@ -174,9 +176,12 @@ class TestFloatPrecision(TransactionCase):
 
         # res.currency.rate uses 6 digits of precision by default
         try_roundtrip(2.6748955, 2.674896, '2000-01-01')
-        try_roundtrip(-2.6748955, -2.674896, '2000-01-02')
         try_roundtrip(10000.999999, 10000.999999, '2000-01-03')
-        try_roundtrip(-10000.999999, -10000.999999, '2000-01-04')
+
+        #TODO re-enable those tests when tests are made on dedicated models
+        # (res.currency.rate don't accept negative value anymore)
+        #try_roundtrip(-2.6748955, -2.674896, '2000-01-02')
+        #try_roundtrip(-10000.999999, -10000.999999, '2000-01-04')
 
     def test_float_split_05(self):
         """ Test split method with 2 digits. """
